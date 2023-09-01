@@ -1,0 +1,41 @@
+.image-full {
+  max-height: 80vh;
+}
+
+.image-full-container .modal-body {
+  text-align: center;
+}
+
+.thumb-image {
+  cursor: pointer;
+}
+
+.modal-carousel {
+  width: 90vw;
+  max-width: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.technical {
+  font-family: monospace;
+  border-radius: 0.3rem;
+  background-color: rgba(var(--bs-tertiary-bg-rgb), 1);
+}
+
+.vh-90 {
+  height: 90vh;
+}
+
+.generation-parameters {
+  text-align: left;
+  padding: 1rem;
+}
+
+.generation-parameters h3 {
+  text-align: center;
+}

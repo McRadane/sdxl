@@ -59,8 +59,8 @@
               </button>
             </div>
           </div>
-          <div style="text-align: left;padding: 1rem;">
-            <h3 style="text-align: center">Generation parameters</h3>
+          <div class="generation-parameters">
+            <h3>Generation parameters</h3>
             {% if include.title-field == "title" %}
               <h4>{{ include.data.first.title }}</h4>
             {% else %}
@@ -76,7 +76,7 @@
               <dt>Prompt</dt>
               <dd class="technical prompt">{{ include.data.first.prompt }}</dd>
               <dt>Negative prompt</dt>
-              <dd class="technical negativePrompt">{{ include.data.first.negativePrompt }}</dd>
+              <dd class="technical negative-prompt">{{ include.data.first.negativePrompt }}</dd>
               <dt>Sampler</dt>
               <dd class="technical sampler">{{ include.data.first.sampler }}</dd>
               <dt>CFG</dt>

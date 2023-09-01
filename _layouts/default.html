@@ -12,36 +12,10 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <style>
-      .image-full {
-        max-height: 80vh;
-      }
-
-      .image-full-container .modal-body {
-        text-align: center;
-      }
-
-      .thumb-image {
-        cursor: pointer;
-      }
-
-      .modal-carousel {
-        width: 90vw;
-        max-width: none;
-      }
-
-      .flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-
-      .technical {
-        font-family: monospace;
-        border-radius: 0.3rem;
-        background-color: rgba(var(--bs-tertiary-bg-rgb),1);
-      }
-    </style>
+    <link
+      href="{{ site.baseurl }}/static/style.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="container">{{ content }}</main>
@@ -50,6 +24,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script src="{{ site.baseurl }}/scripts/script.js"></script>
+    <script src="{{ site.baseurl }}/static/script.js"></script>
   </body>
 </html>
