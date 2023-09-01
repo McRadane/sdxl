@@ -1,0 +1,20 @@
+<div
+  class="carousel-item {% if include.active %}active{% endif %}"
+  data-title="{{ include.title }}"
+  data-style="{{ include.style }}"
+  data-subject="{{ include.subject }}"
+  data-model="{{ include.picture.model }}"
+  data-prompt="{{ include.picture.prompt }}"
+  data-negative-prompt="{{ include.picture.negativePrompt }}"
+  data-sampler="{{ include.picture.sampler }}"
+  data-cfg="{{ include.picture.cfg }}"
+  data-steps="{{ include.picture.steps }}"
+  data-seed="{{ include.picture.seed }}"
+>
+  <img
+    src="{{ include.image }}"
+    class="d-block"
+    style="height: 90vh"
+    alt="{{ include.title }}"
+  />
+</div>

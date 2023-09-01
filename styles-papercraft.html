@@ -1,0 +1,42 @@
+---
+layout: gallery
+title: Papercraft
+---
+
+{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up | concat: site.data.apple | concat: site.data.supercar %}
+
+{% assign collage = everything | where: 'title', 'Collage' %}
+
+{% include gallery.html data = collage title = "Collage" id = 'collage' %}
+
+{% assign flatpapercut = everything | where: 'title', 'Flat Papercut' %}
+
+{% include gallery.html data = flatpapercut title = "Flat Papercut" id = 'flatpapercut' %}
+
+{% assign kirigami = everything | where: 'title', 'Kirigami' %}
+
+{% include gallery.html data = kirigami title = "Kirigami" id = 'kirigami' %}
+
+{% assign papermache = everything | where: 'title', 'Paper Mache' %}
+
+{% include gallery.html data = papermache title = "Paper Mache" id = 'papermache' %}
+
+{% assign paperquilling = everything | where: 'title', 'Paper Quilling' %}
+
+{% include gallery.html data = paperquilling title = "Paper Quilling" id = 'paperquilling' %}
+
+{% assign papercutcollage = everything | where: 'title', 'Papercut Collage' %}
+
+{% include gallery.html data = papercutcollage title = "Papercut Collage" id = 'papercutcollage' %}
+
+{% assign papercutshadowbox = everything | where: 'title', 'Papercut Shadow Box' %}
+
+{% include gallery.html data = papercutshadowbox title = "Papercut Shadow Box" id = 'papercutshadowbox' %}
+
+{% assign stackedpapercut = everything | where: 'title', 'Stacked Papercut' %}
+
+{% include gallery.html data = stackedpapercut title = "Stacked Papercut" id = 'stackedpapercut' %}
+
+{% assign thicklayeredpapercut = everything | where: 'title', 'Thick Layered Papercut' %}
+
+{% include gallery.html data = thicklayeredpapercut title = "Thick Layered Papercut" id = 'thicklayeredpapercut' %}

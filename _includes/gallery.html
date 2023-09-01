@@ -1,0 +1,18 @@
+<h2>{{include.title}}</h2>
+
+<div class="row">
+  {% for picture in include.data %} 
+    {% capture image %}{{ site.baseurl }}/static/images/img-thumbs/{{picture.filename}}{% endcapture %} 
+    {% if include.title-field == "title" %}
+      {% include thumb.html image=image category = include.id title=picture.title image-index = forloop.index0 %} 
+    {% else %}
+      {% include thumb.html image=image category = include.id title=picture.subject image-index = forloop.index0 %} 
+    {% endif %}
+    
+  {% endfor %}
+</div>
+
+{% include carousel.html 
+  data=include.data
+  id=include.id
+%} 

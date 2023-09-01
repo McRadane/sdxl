@@ -1,0 +1,32 @@
+- title: Base
+  href: /styles-base
+  image: static/images/img-thumbs/base.png
+
+- title: Ads
+  href: /styles-ads
+  image: static/images/img-thumbs/ads.png
+
+- title: Artstyle
+  href: /styles-artstyle
+  image: static/images/img-thumbs/artstyle.png
+
+- title: Futuristic
+  href: /styles-futuristic
+  image: static/images/img-thumbs/futuristic.png
+
+- title: Game
+  href: /styles-game
+  image: static/images/img-thumbs/game.png
+
+- title: Miscellaneous
+  href: /styles-miscellaneous
+  image: static/images/img-thumbs/miscellaneous.png
+
+- title: Papercraft
+  href: /styles-papercraft
+  image: static/images/img-thumbs/papercraft.png
+
+- title: Photo
+  href: /styles-photo
+  image: static/images/img-thumbs/photo.png
+

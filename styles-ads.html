@@ -1,0 +1,38 @@
+---
+layout: gallery
+title: Ads
+---
+
+{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up | concat: site.data.apple | concat: site.data.supercar %}
+
+{% assign advertising = everything | where: 'title', 'Advertising' %}
+
+{% include gallery.html data = advertising title = "Advertising" id = 'advertising' %}
+
+{% assign automotive = everything | where: 'title', 'Automotive' %}
+
+{% include gallery.html data = automotive title = "Automotive" id = 'automotive' %}
+
+{% assign corporate = everything | where: 'title', 'Corporate' %}
+
+{% include gallery.html data = corporate title = "Corporate" id = 'corporate' %}
+
+{% assign fashion = everything | where: 'title', 'Fashion' %}
+
+{% include gallery.html data = fashion title = "Fashion" id = 'fashion' %}
+
+{% assign foodphotography = everything | where: 'title', 'Food Photography' %}
+
+{% include gallery.html data = foodphotography title = "Food Photography" id = 'foodphotography' %}
+
+{% assign luxury = everything | where: 'title', 'Luxury' %}
+
+{% include gallery.html data = luxury title = "Luxury" id = 'luxury' %}
+
+{% assign realestate = everything | where: 'title', 'Real Estate' %}
+
+{% include gallery.html data = realestate title = "Real Estate" id = 'realestate' %}
+
+{% assign retail = everything | where: 'title', 'Retail' %}
+
+{% include gallery.html data = retail title = "Retail" id = 'retail' %}

@@ -1,0 +1,12 @@
+---
+layout: gallery
+title: Apple
+description: A basket of apples.
+---
+
+{% assign data = site.data.apple %}
+
+{% include subject-galleries.html 
+    data = data 
+    gallery = "apple"
+%}

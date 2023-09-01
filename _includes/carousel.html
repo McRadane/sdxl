@@ -1,0 +1,94 @@
+<div
+  class="modal fade image-full-container"
+  id="modal-{{ include.id }}"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-carousel">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="flex">
+          <div id="carousel-{{include.id}}" class="carousel slide">
+            <div class="carousel-inner">
+              {% for picture in include.data %}
+                {% assign active = forloop.first %}
+                {% capture image %}{{ site.baseurl }}/static/images/img-normal/{{picture.filename}}{% endcapture %}
+                {% if include.title-field == "title" %}
+                  {% include carousel-image.html 
+                    image=image 
+                    title=picture.title
+                    style=picture.title
+                    subject=picture.subject
+                    active = active 
+                    picture=picture
+                  %}
+                {% else %}
+                  {% include carousel-image.html 
+                    image=image 
+                    title=picture.subject
+                    style=picture.title
+                    subject=picture.subject
+                    active = active 
+                    picture=picture
+                  %}
+                {% endif %}
+              {% endfor %}
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel-{{include.id}}"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel-{{include.id}}"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div style="text-align: left;padding: 1rem;">
+            <h3 style="text-align: center">Generation parameters</h3>
+            {% if include.title-field == "title" %}
+              <h4>{{ include.data.first.title }}</h4>
+            {% else %}
+              <h4>{{ include.data.first.subject }}</h4>
+            {% endif %}
+            <dl>
+              <dt>Model</dt>
+              <dd class="technical model">{{ include.data.first.model }}</dd>
+              <dt>Style</dt>
+              <dd class="technical style">{{ include.data.first.title }}</dd> 
+              <dt>Subject</dt>
+              <dd class="technical subject">{{ include.data.first.subject }}</dd>                           
+              <dt>Prompt</dt>
+              <dd class="technical prompt">{{ include.data.first.prompt }}</dd>
+              <dt>Negative prompt</dt>
+              <dd class="technical negativePrompt">{{ include.data.first.negativePrompt }}</dd>
+              <dt>Sampler</dt>
+              <dd class="technical sampler">{{ include.data.first.sampler }}</dd>
+              <dt>CFG</dt>
+              <dd class="technical cfg">{{ include.data.first.cfg }}</dd>
+              <dt>Steps</dt>
+              <dd class="technical steps">{{ include.data.first.steps }}</dd>
+              <dt>Seed</dt>
+              <dd class="technical seed">{{ include.data.first.seed }}</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

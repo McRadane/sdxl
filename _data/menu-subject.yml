@@ -1,0 +1,40 @@
+- title: Tattooed Women
+  href: /tattooed-women
+  description: A women with tattoo and blue hair.
+  image: static/images/img-thumbs/tattooed-women/00000000000000-None.png
+
+- title: City Skyline
+  href: /city
+  description: A city skyline at sunset.
+  image: static/images/img-thumbs/city/00000000000000-None.png
+
+- title: Modern House
+  href: /house
+  description: A modern house.
+  image: static/images/img-thumbs/house/20230829120950-None.png
+
+- title: Nude Women
+  href: /nude-women
+  description: A nude women in darkness.
+  image: static/images/img-thumbs/nude-women/20230829102029-None.png
+
+- title: Forest River
+  href: /river
+  description: A river in a forest.
+  image: static/images/img-thumbs/river/20230829154829-None.png
+
+- title: Close-up Portrait
+  href: /close-up
+  description: A close-up portrait of a ginger girl. a LoRA (Low-Rank Adaptation) is used to improve the quality of the eyes.
+  image: static/images/img-thumbs/close-up/20230829151956-None.png
+
+- title: Apple
+  href: /apple
+  description: A basket of apples.
+  image: static/images/img-thumbs/apple/20230831182605-None.png
+
+- title: Supercar
+  href: /supercar
+  description: A supercar.
+  image: static/images/img-thumbs/supercar/20230831182517-None.png
+

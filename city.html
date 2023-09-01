@@ -1,0 +1,12 @@
+---
+layout: gallery
+title: City Skyline
+description: A city skyline at sunset.
+---
+
+{% assign data = site.data.city %}
+
+{% include subject-galleries.html 
+    data = data 
+    gallery = "city"
+%}

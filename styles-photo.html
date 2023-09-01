@@ -1,0 +1,50 @@
+---
+layout: gallery
+title: Photo
+---
+
+{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up | concat: site.data.apple | concat: site.data.supercar %}
+
+{% assign alien = everything | where: 'title', 'Alien' %}
+
+{% include gallery.html data = alien title = "Alien" id = 'alien' %}
+
+{% assign filmnoir = everything | where: 'title', 'Film Noir' %}
+
+{% include gallery.html data = filmnoir title = "Film Noir" id = 'filmnoir' %}
+
+{% assign hdr = everything | where: 'title', 'HDR' %}
+
+{% include gallery.html data = hdr title = "HDR" id = 'hdr' %}
+
+{% assign longexposure = everything | where: 'title', 'Long Exposure' %}
+
+{% include gallery.html data = longexposure title = "Long Exposure" id = 'longexposure' %}
+
+{% assign neonnoir = everything | where: 'title', 'Neon Noir' %}
+
+{% include gallery.html data = neonnoir title = "Neon Noir" id = 'neonnoir' %}
+
+{% assign silhouette = everything | where: 'title', 'Silhouette' %}
+
+{% include gallery.html data = silhouette title = "Silhouette" id = 'silhouette' %}
+
+{% assign tiltshift = everything | where: 'title', 'Tilt-Shift' %}
+
+{% include gallery.html data = tiltshift title = "Tilt-Shift" id = 'tiltshift' %}
+
+{% assign doubleexposure = everything | where: 'title', 'Double Exposure' %}
+
+{% include gallery.html data = doubleexposure title = "Double Exposure" id = 'doubleexposure' %}
+
+{% assign fadedpolaroidphoto = everything | where: 'title', 'Faded Polaroid Photo' %}
+
+{% include gallery.html data = fadedpolaroidphoto title = "Faded Polaroid Photo" id = 'fadedpolaroidphoto' %}
+
+{% assign knollingphotography = everything | where: 'title', 'Knolling Photography' %}
+
+{% include gallery.html data = knollingphotography title = "Knolling Photography" id = 'knollingphotography' %}
+
+{% assign macrophotography = everything | where: 'title', 'Macro Photography' %}
+
+{% include gallery.html data = macrophotography title = "Macro Photography" id = 'macrophotography' %}

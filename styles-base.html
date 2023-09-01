@@ -1,0 +1,74 @@
+---
+layout: gallery
+title: Base
+---
+
+{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up | concat: site.data.apple | concat: site.data.supercar %}
+
+{% assign dmodel = everything | where: 'title', '3D Model' %}
+
+{% include gallery.html data = dmodel title = "3D Model" id = 'dmodel' %}
+
+{% assign analogfilm = everything | where: 'title', 'Analog Film' %}
+
+{% include gallery.html data = analogfilm title = "Analog Film" id = 'analogfilm' %}
+
+{% assign anime = everything | where: 'title', 'Anime' %}
+
+{% include gallery.html data = anime title = "Anime" id = 'anime' %}
+
+{% assign cinematic = everything | where: 'title', 'Cinematic' %}
+
+{% include gallery.html data = cinematic title = "Cinematic" id = 'cinematic' %}
+
+{% assign comicbook = everything | where: 'title', 'Comic Book' %}
+
+{% include gallery.html data = comicbook title = "Comic Book" id = 'comicbook' %}
+
+{% assign craftclay = everything | where: 'title', 'Craft Clay' %}
+
+{% include gallery.html data = craftclay title = "Craft Clay" id = 'craftclay' %}
+
+{% assign digitalart = everything | where: 'title', 'Digital Art' %}
+
+{% include gallery.html data = digitalart title = "Digital Art" id = 'digitalart' %}
+
+{% assign enhance = everything | where: 'title', 'Enhance' %}
+
+{% include gallery.html data = enhance title = "Enhance" id = 'enhance' %}
+
+{% assign fantasyart = everything | where: 'title', 'Fantasy Art' %}
+
+{% include gallery.html data = fantasyart title = "Fantasy Art" id = 'fantasyart' %}
+
+{% assign isometricstyle = everything | where: 'title', 'Isometric Style' %}
+
+{% include gallery.html data = isometricstyle title = "Isometric Style" id = 'isometricstyle' %}
+
+{% assign lineart = everything | where: 'title', 'Line Art' %}
+
+{% include gallery.html data = lineart title = "Line Art" id = 'lineart' %}
+
+{% assign lowpoly = everything | where: 'title', 'Lowpoly' %}
+
+{% include gallery.html data = lowpoly title = "Lowpoly" id = 'lowpoly' %}
+
+{% assign neonpunk = everything | where: 'title', 'Neon Punk' %}
+
+{% include gallery.html data = neonpunk title = "Neon Punk" id = 'neonpunk' %}
+
+{% assign origami = everything | where: 'title', 'Origami' %}
+
+{% include gallery.html data = origami title = "Origami" id = 'origami' %}
+
+{% assign photographic = everything | where: 'title', 'Photographic' %}
+
+{% include gallery.html data = photographic title = "Photographic" id = 'photographic' %}
+
+{% assign pixelart = everything | where: 'title', 'Pixel Art' %}
+
+{% include gallery.html data = pixelart title = "Pixel Art" id = 'pixelart' %}
+
+{% assign texture = everything | where: 'title', 'Texture' %}
+
+{% include gallery.html data = texture title = "Texture" id = 'texture' %}

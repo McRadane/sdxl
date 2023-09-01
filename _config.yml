@@ -1,0 +1,7 @@
+defaults:
+  - scope:
+      path: "static/images"
+    values:
+      image: true
+
+baseurl: /sdxl

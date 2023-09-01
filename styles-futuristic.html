@@ -1,0 +1,54 @@
+---
+layout: gallery
+title: Futuristic
+---
+
+{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up | concat: site.data.apple | concat: site.data.supercar %}
+
+{% assign biomechanical = everything | where: 'title', 'Biomechanical' %}
+
+{% include gallery.html data = biomechanical title = "Biomechanical" id = 'biomechanical' %}
+
+{% assign biomechanicalcyberpunk = everything | where: 'title', 'Biomechanical Cyberpunk' %}
+
+{% include gallery.html data = biomechanicalcyberpunk title = "Biomechanical Cyberpunk" id = 'biomechanicalcyberpunk' %}
+
+{% assign cybernetic = everything | where: 'title', 'Cybernetic' %}
+
+{% include gallery.html data = cybernetic title = "Cybernetic" id = 'cybernetic' %}
+
+{% assign cyberneticrobot = everything | where: 'title', 'Cybernetic Robot' %}
+
+{% include gallery.html data = cyberneticrobot title = "Cybernetic Robot" id = 'cyberneticrobot' %}
+
+{% assign cyberpunkcityscape = everything | where: 'title', 'Cyberpunk Cityscape' %}
+
+{% include gallery.html data = cyberpunkcityscape title = "Cyberpunk Cityscape" id = 'cyberpunkcityscape' %}
+
+{% assign futuristic = everything | where: 'title', 'Futuristic' %}
+
+{% include gallery.html data = futuristic title = "Futuristic" id = 'futuristic' %}
+
+{% assign retrocyberpunk = everything | where: 'title', 'Retro Cyberpunk' %}
+
+{% include gallery.html data = retrocyberpunk title = "Retro Cyberpunk" id = 'retrocyberpunk' %}
+
+{% assign retrofuturism = everything | where: 'title', 'Retro Futurism' %}
+
+{% include gallery.html data = retrofuturism title = "Retro Futurism" id = 'retrofuturism' %}
+
+{% assign scifi = everything | where: 'title', 'Sci-Fi' %}
+
+{% include gallery.html data = scifi title = "Sci-Fi" id = 'scifi' %}
+
+{% assign vaporwave = everything | where: 'title', 'Vaporwave' %}
+
+{% include gallery.html data = vaporwave title = "Vaporwave" id = 'vaporwave' %}
+
+{% assign glitchcore = everything | where: 'title', 'Glitchcore' %}
+
+{% include gallery.html data = glitchcore title = "Glitchcore" id = 'glitchcore' %}
+
+{% assign glofi = everything | where: 'title', 'Glo-fi' %}
+
+{% include gallery.html data = glofi title = "Glo-fi" id = 'glofi' %}
