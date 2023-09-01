@@ -5,3 +5,6 @@ defaults:
       image: true
 
 baseurl: /sdxl
+
+exclude:
+  - README.md
