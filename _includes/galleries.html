@@ -1,21 +1,14 @@
+{% assign categories = site.data.data-category | sort: "order" %}
+{% for category in categories %}
+    {% assign pictures = include.data | where: 'category', category.title %}
+    {% include gallery.html 
+        data = pictures 
+        gallery = include.gallery 
+        title-field = "title"
+        title = category.title 
+        id = category.slug 
+        lora = category.lora 
+    %}
+{% endfor %}
 
-{% assign base = include.data | where: 'category', 'No style' %}
-{% assign sai = include.data | where: 'category', "Stability's AI" %}
-{% assign ads = include.data | sort_natural: 'title' | where: 'category', 'Ads'  %}
-{% assign artstyle = include.data | sort_natural: 'title' | where: 'category', 'Artstyle' %}
-{% assign futur = include.data | sort_natural: 'title' | where: 'category', 'Futuristic' %}
-{% assign game = include.data | sort_natural: 'title' | where: 'category', 'Game' %}
-{% assign paper = include.data | sort_natural: 'title' | where: 'category', 'Papercraft' %}
-{% assign photo = include.data | sort_natural: 'title' | where: 'category', 'Photo' %}
-{% assign misc = include.data | sort_natural: 'title' | where: 'category', 'Miscellaneous' %}
-
-{% include gallery.html data = base gallery = include.gallery title-field = "title" title = "No style" id = 'base' %}
-{% include gallery.html data = sai gallery = include.gallery title-field = "title" title = "Stability's AI" id = 'sai' %}
-{% include gallery.html data = ads gallery = include.gallery title-field = "title" title = "Ads" id = 'ads' %}
-{% include gallery.html data = artstyle gallery = include.gallery title-field = "title" title = "Artstyle" id = 'artstyle' %}
-{% include gallery.html data = futur gallery = include.gallery title-field = "title" title = "Futuristic" id = 'futur' %}
-{% include gallery.html data = game gallery = include.gallery title-field = "title" title = "Game" id = 'game' %}
-{% include gallery.html data = paper gallery = include.gallery title-field = "title" title = "Papercraft" id = 'papercraft'%}
-{% include gallery.html data = photo gallery = include.gallery title-field = "title" title = "Photo" id = 'photo' %}
-{% include gallery.html data = misc gallery = include.gallery title-field = "title" title = "Miscellaneous" id = 'misc' %}
 

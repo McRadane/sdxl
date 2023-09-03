@@ -3,7 +3,7 @@ layout: gallery
 title: Artstyle
 ---
 
-{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up | concat: site.data.apple | concat: site.data.supercar %}
+{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up-lora | concat: site.data.apple | concat: site.data.supercar | concat: site.data.close-up %}
 
 {% assign abstract = everything | where: 'title', 'Abstract' %}
 
@@ -20,10 +20,6 @@ title: Artstyle
 {% assign artnouveau = everything | where: 'title', 'Art Nouveau' %}
 
 {% include gallery.html data = artnouveau title = "Art Nouveau" id = 'artnouveau' %}
-
-{% assign constructivist = everything | where: 'title', 'Constructivist' %}
-
-{% include gallery.html data = constructivist title = "Constructivist" id = 'constructivist' %}
 
 {% assign cubist = everything | where: 'title', 'Cubist' %}
 

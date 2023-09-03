@@ -39,3 +39,11 @@
 .generation-parameters h3 {
   text-align: center;
 }
+
+.lora {
+  display: none;
+}
+
+.display-lora .lora {
+  display: initial !important;
+}

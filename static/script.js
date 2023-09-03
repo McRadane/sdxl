@@ -1,7 +1,6 @@
 const carousels = document.querySelectorAll(".carousel");
 const modals = document.querySelectorAll(".modal");
 const openImages = document.querySelectorAll(".open-image");
-// const carousel = new bootstrap.Carousel('#myCarousel')
 
 const carouselInstances = {};
 const modalInstances = {};
@@ -9,9 +8,8 @@ const modalInstances = {};
 carousels.forEach((carouselElement) => {
   const carousel = new bootstrap.Carousel(carouselElement);
 
-  carouselElement.addEventListener('slide.bs.carousel', event => {
-
-    const id = event.target.id.replace('carousel-', 'modal-');
+  carouselElement.addEventListener("slide.bs.carousel", (event) => {
+    const id = event.target.id.replace("carousel-", "modal-");
     const title = event.relatedTarget.dataset.title;
     const style = event.relatedTarget.dataset.style;
     const subject = event.relatedTarget.dataset.subject;
@@ -23,17 +21,43 @@ carousels.forEach((carouselElement) => {
     const steps = event.relatedTarget.dataset.steps;
     const seed = event.relatedTarget.dataset.seed;
 
+    const foundLoras = [];
+    let foundModel = model;
+
+    event.relatedTarget.dataset.lora.split(",").map((lora) => {
+      const found = data.loras.find((item) => item.title === lora);
+      if (found) {
+        foundLoras.push(
+          `<a href="${found.url}" target="_blank">${found.title}</a>`
+        );
+      }
+    });
+
+    const found = data.models.find((item) => item.hash === model);
+    if (found) {
+      foundModel = `<a href="${found.url}" target="_blank">${found.title}</a>`;
+    }
+
     document.querySelector(`#${id} h4`).textContent = title;
-    document.querySelector(`#${id} .technical.model`).textContent = model;
+
+    document.querySelector(`#${id} .technical.model`).innerHTML = foundModel;
+
     document.querySelector(`#${id} .technical.style`).textContent = style;
     document.querySelector(`#${id} .technical.subject`).textContent = subject;
     document.querySelector(`#${id} .technical.prompt`).textContent = prompt;
-    document.querySelector(`#${id} .technical.negativePrompt`).textContent = negativePrompt;
+    document.querySelector(`#${id} .technical.negative-prompt`).textContent =
+      negativePrompt;
+
+    if (foundLoras.length > 0) {
+      document.querySelector(`#${id} .technical.lora`).innerHTML =
+        foundLoras.join(" ");
+    }
+
     document.querySelector(`#${id} .technical.sampler`).textContent = sampler;
     document.querySelector(`#${id} .technical.cfg`).textContent = cfg;
     document.querySelector(`#${id} .technical.steps`).textContent = steps;
     document.querySelector(`#${id} .technical.seed`).textContent = seed;
-  })
+  });
 
   carouselInstances[carouselElement.id] = carousel;
 });
@@ -51,11 +75,30 @@ openImages.forEach((openImage) => {
     const carousel = carouselInstances[`carousel-${imageId}`];
     const modal = modalInstances[`modal-${imageId}`];
 
-    if(carousel && modal) {
+    if (carousel && modal) {
       modal.show();
       carousel.to(imageIndex);
     }
   });
 });
-//modal
-const handleGotoCarousel = () => {};
+
+const enableDisableLora = (displayLora) => {
+  if (displayLora) {
+    document.body.classList.add("display-lora");
+  } else {
+    document.body.classList.remove("display-lora");
+  }
+}
+
+const load = () => {
+  const displayLora = localStorage.getItem("displayLora") === "true";
+  enableDisableLora(displayLora);
+  document.querySelector('#displayLora').checked = displayLora;
+
+  document.querySelector('#displayLora').addEventListener('click', (event) => {
+    enableDisableLora(event.target.checked);
+    localStorage.setItem("displayLora", event.target.checked)
+  })
+}
+
+load();

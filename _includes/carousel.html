@@ -68,15 +68,26 @@
             {% endif %}
             <dl>
               <dt>Model</dt>
-              <dd class="technical model">{{ include.data.first.model }}</dd>
+              <dd class="technical model">
+                {% assign model = site.data.data-models | where: 'hash', include.data.first.model %}
+                <a href="{{ model.first.url }}" target="_blank">{{ model.first.title }}</a>
+              </dd>
               <dt>Style</dt>
               <dd class="technical style">{{ include.data.first.title }}</dd> 
               <dt>Subject</dt>
-              <dd class="technical subject">{{ include.data.first.subject }}</dd>                           
+              <dd class="technical subject">{{ include.data.first.subject }}</dd>
               <dt>Prompt</dt>
               <dd class="technical prompt">{{ include.data.first.prompt }}</dd>
               <dt>Negative prompt</dt>
               <dd class="technical negative-prompt">{{ include.data.first.negativePrompt }}</dd>
+              <dt>LoRA</dt>
+              <dd class="technical lora">
+                {% assign loras = include.data.first.lora | split: "," %}
+                {% for loratitle in loras %}
+                  {% assign foundlora = site.data.data-loras | where: 'title', loratitle %}
+                  <a href="{{ foundlora.first.url }}" target="_blank">{{ foundlora.first.title }}</a>
+                {% endfor %}
+              </dd>
               <dt>Sampler</dt>
               <dd class="technical sampler">{{ include.data.first.sampler }}</dd>
               <dt>CFG</dt>
