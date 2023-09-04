@@ -19,6 +19,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 
 .technical {
@@ -28,7 +32,8 @@
 }
 
 .vh-90 {
-  height: 90vh;
+  max-height: 90vh;
+  max-width: 100%;
 }
 
 .generation-parameters {
@@ -40,10 +45,25 @@
   text-align: center;
 }
 
-.lora {
+.lora, .share-button {
   display: none;
 }
 
 .display-lora .lora {
   display: initial !important;
+}
+
+.display-share .share-button {
+  display: initial !important;
+}
+
+footer {
+  background-color: var(--bs-secondary-bg);
+  padding: 2rem;
+}
+
+footer .container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

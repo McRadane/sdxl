@@ -88,17 +88,38 @@ const enableDisableLora = (displayLora) => {
   } else {
     document.body.classList.remove("display-lora");
   }
-}
+};
+
+const testWebShare = async () => {
+  if (navigator.share !== undefined) {
+    document.body.classList.add("display-share");
+  } else {
+    document.body.classList.remove("display-share");
+  }
+};
 
 const load = () => {
+  testWebShare();
+
   const displayLora = localStorage.getItem("displayLora") === "true";
   enableDisableLora(displayLora);
-  document.querySelector('#displayLora').checked = displayLora;
+  document.querySelector("#displayLora").checked = displayLora;
 
-  document.querySelector('#displayLora').addEventListener('click', (event) => {
+  document.querySelector("#displayLora").addEventListener("click", (event) => {
     enableDisableLora(event.target.checked);
-    localStorage.setItem("displayLora", event.target.checked)
-  })
-}
+    localStorage.setItem("displayLora", event.target.checked);
+  });
+
+  document.querySelectorAll(".share-button").forEach((shareBtn) =>
+    shareBtn.addEventListener("click", (event) => {
+      const container = event.currentTarget.parentElement;
+
+      const title = container.querySelector("h4").textContent;
+      const url = document.location.href;
+
+      navigator.share({ title, url });
+    })
+  );
+};
 
 load();
