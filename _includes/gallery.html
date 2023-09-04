@@ -5,8 +5,10 @@
 {% endif %}
 <h2>{{include.title}}</h2>
 
+{% assign pictures = include.data | sort: "title" %}
+
 <div class="row">
-  {% for picture in include.data %} 
+  {% for picture in pictures %} 
     {% capture image %}{{ site.baseurl }}/static/images/img-thumbs/{{picture.filename}}{% endcapture %} 
     {% if include.title-field == "title" %}
       {% include thumb.html image=image category = include.id title=picture.title image-index = forloop.index0 %} 
@@ -18,7 +20,7 @@
 </div>
 
 {% include carousel.html 
-  data=include.data
+  data=pictures
   id=include.id
 %} 
 </div>
