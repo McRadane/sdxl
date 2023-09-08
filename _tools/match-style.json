@@ -1,0 +1,1511 @@
+[
+  {
+    "category": "No style",
+    "category-order": 0,
+    "category-slug": "base",
+    "name": "Base",
+    "negativePrompt": "",
+    "prompt": "{prompt}",
+    "style": "None"
+  },
+  {
+    "category": "No style",
+    "category-order": 0,
+    "category-slug": "base",
+    "lora": [
+      {
+        "title": "Detail Tweaker XL",
+        "url": "https://civitai.com/models/122359?modelVersionId=135867"
+      }
+    ],
+    "name": "More Details",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:add-detail-xl:1>",
+    "style": "Add Details XL (More Details)"
+  },
+  {
+    "category": "No style",
+    "category-order": 0,
+    "category-slug": "base",
+    "lora": [
+      {
+        "title": "Detail Tweaker XL",
+        "url": "https://civitai.com/models/122359?modelVersionId=135867"
+      }
+    ],
+    "name": "Less Details",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:add-detail-xl:-1>",
+    "style": "Add Details XL (Less Details)"
+  },
+  {
+    "category": "No style",
+    "category-order": 0,
+    "category-slug": "base",
+    "lora": [
+      {
+        "title": "Detail Tweaker XL",
+        "url": "https://civitai.com/models/122359?modelVersionId=135867"
+      }
+    ],
+    "name": "Most Details",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:add-detail-xl:3>",
+    "style": "Add Details XL (Most Details)"
+  },
+  {
+    "category": "No style",
+    "category-order": 0,
+    "category-slug": "base",
+    "lora": [
+      {
+        "title": "Detail Tweaker XL",
+        "url": "https://civitai.com/models/122359?modelVersionId=135867"
+      }
+    ],
+    "name": "Least Details",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:add-detail-xl:-3>",
+    "style": "Add Details XL (Least Details)"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "3D Model",
+    "negativePrompt": "ugly, deformed, noisy, low poly, blurry, painting",
+    "prompt": "professional 3d model {prompt} . octane render, highly detailed, volumetric, dramatic lighting",
+    "style": "3D Model"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Analog Film",
+    "negativePrompt": "painting, drawing, illustration, glitch, deformed, mutated, cross-eyed, ugly, disfigured",
+    "prompt": "analog film photo {prompt} . faded film, desaturated, 35mm photo, grainy, vignette, vintage, Kodachrome, Lomography, stained, highly detailed, found footage",
+    "style": "Analog Film"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Anime",
+    "negativePrompt": "photo, deformed, black and white, realism, disfigured, low contrast",
+    "prompt": "anime artwork {prompt} . anime style, key visual, vibrant, studio anime,  highly detailed",
+    "style": "Anime (SDXL)"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Cinematic",
+    "negativePrompt": "anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, ugly, disfigured",
+    "prompt": "cinematic film still {prompt} . shallow depth of field, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy",
+    "style": "Cinematic"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Comic Book",
+    "negativePrompt": "photograph, deformed, glitch, noisy, realistic, stock photo",
+    "prompt": "comic {prompt} . graphic illustration, comic art, graphic novel art, vibrant, highly detailed",
+    "style": "Comic Book"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Craft Clay",
+    "negativePrompt": "sloppy, messy, grainy, highly detailed, ultra textured, photo",
+    "prompt": "play-doh style {prompt} . sculpture, clay art, centered composition, Claymation",
+    "style": "Craft Clay"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Digital Art",
+    "negativePrompt": "photo, photorealistic, realism, ugly",
+    "prompt": "concept art {prompt} . digital artwork, illustrative, painterly, matte painting, highly detailed",
+    "style": "Digital Art"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Enhance",
+    "negativePrompt": "ugly, deformed, noisy, blurry, distorted, grainy",
+    "prompt": "breathtaking {prompt} . award-winning, professional, highly detailed",
+    "style": "Enhance"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Fantasy Art",
+    "negativePrompt": "photographic, realistic, realism, 35mm film, dslr, cropped, frame, text, deformed, glitch, noise, noisy, off-center, deformed, cross-eyed, closed eyes, bad anatomy, ugly, disfigured, sloppy, duplicate, mutated, black and white",
+    "prompt": "ethereal fantasy concept art of  {prompt} . magnificent, celestial, ethereal, painterly, epic, majestic, magical, fantasy art, cover art, dreamy",
+    "style": "Fantasy Art"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Isometric Style",
+    "negativePrompt": "deformed, mutated, ugly, disfigured, blur, blurry, noise, noisy, realistic, photographic",
+    "prompt": "isometric style {prompt} . vibrant, beautiful, crisp, detailed, ultra detailed, intricate",
+    "style": "Isometric Style"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Line Art",
+    "negativePrompt": "anime, photorealistic, 35mm film, deformed, glitch, blurry, noisy, off-center, deformed, cross-eyed, closed eyes, bad anatomy, ugly, disfigured, mutated, realism, realistic, impressionism, expressionism, oil, acrylic",
+    "prompt": "line art drawing {prompt} . professional, sleek, modern, minimalist, graphic, line art, vector graphics",
+    "style": "Line Art"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Lowpoly",
+    "negativePrompt": "noisy, sloppy, messy, grainy, highly detailed, ultra textured, photo",
+    "prompt": "low-poly style {prompt} . low-poly game art, polygon mesh, jagged, blocky, wireframe edges, centered composition",
+    "style": "Lowpoly"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Neon Punk",
+    "negativePrompt": "painting, drawing, illustration, glitch, deformed, mutated, cross-eyed, ugly, disfigured",
+    "prompt": "neonpunk style {prompt} . cyberpunk, vaporwave, neon, vibes, vibrant, stunningly beautiful, crisp, detailed, sleek, ultramodern, magenta highlights, dark purple shadows, high contrast, cinematic, ultra detailed, intricate, professional",
+    "style": "Neon Punk"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Origami",
+    "negativePrompt": "noisy, sloppy, messy, grainy, highly detailed, ultra textured, photo",
+    "prompt": "origami style {prompt} . paper art, pleated paper, folded, origami art, pleats, cut and fold, centered composition",
+    "style": "Origami"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Photographic",
+    "negativePrompt": "drawing, painting, crayon, sketch, graphite, impressionist, noisy, blurry, soft, deformed, ugly",
+    "prompt": "cinematic photo {prompt} . 35mm photograph, film, bokeh, professional, 4k, highly detailed",
+    "style": "Photographic"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Pixel Art",
+    "negativePrompt": "sloppy, messy, blurry, noisy, highly detailed, ultra textured, photo, realistic",
+    "prompt": "pixel-art {prompt} . low-res, blocky, pixel art style, 8-bit graphics",
+    "style": "Pixel Art"
+  },
+  {
+    "category": "Stability's AI",
+    "category-order": 1,
+    "category-slug": "sai",
+    "name": "Texture",
+    "negativePrompt": "ugly, deformed, noisy, blurry",
+    "prompt": "texture {prompt} top down close-up",
+    "style": "Texture"
+  },
+  {
+    "category": "Ads",
+    "category-order": 2,
+    "category-slug": "ads",
+    "name": "Advertising",
+    "negativePrompt": "noisy, blurry, amateurish, sloppy, unattractive",
+    "prompt": "Advertising poster style {prompt} . Professional, modern, product-focused, commercial, eye-catching, highly detailed",
+    "style": "Advertising"
+  },
+  {
+    "category": "Ads",
+    "category-order": 2,
+    "category-slug": "ads",
+    "name": "Automotive",
+    "negativePrompt": "noisy, blurry, unattractive, sloppy, unprofessional",
+    "prompt": "Automotive advertisement style {prompt} . Sleek, dynamic, professional, commercial, vehicle-focused, high-resolution, highly detailed",
+    "style": "Automotive"
+  },
+  {
+    "category": "Ads",
+    "category-order": 2,
+    "category-slug": "ads",
+    "name": "Corporate",
+    "negativePrompt": "noisy, blurry, grungy, sloppy, cluttered, disorganized",
+    "prompt": "Corporate branding style {prompt} . Professional, clean, modern, sleek, minimalist, business-oriented, highly detailed",
+    "style": "Corporate"
+  },
+  {
+    "category": "Ads",
+    "category-order": 2,
+    "category-slug": "ads",
+    "name": "Fashion",
+    "negativePrompt": "outdated, blurry, noisy, unattractive, sloppy",
+    "prompt": "Fashion editorial style {prompt} . High fashion, trendy, stylish, editorial, magazine style, professional, highly detailed",
+    "style": "Fashion"
+  },
+  {
+    "category": "Ads",
+    "category-order": 2,
+    "category-slug": "ads",
+    "name": "Food Photography",
+    "negativePrompt": "unappetizing, sloppy, unprofessional, noisy, blurry",
+    "prompt": "Food photography style {prompt} . Appetizing, professional, culinary, high-resolution, commercial, highly detailed",
+    "style": "Food Photography"
+  },
+  {
+    "category": "Ads",
+    "category-order": 2,
+    "category-slug": "ads",
+    "name": "Luxury",
+    "negativePrompt": "cheap, noisy, blurry, unattractive, amateurish",
+    "prompt": "Luxury product style {prompt} . Elegant, sophisticated, high-end, luxurious, professional, highly detailed",
+    "style": "Luxury"
+  },
+  {
+    "category": "Ads",
+    "category-order": 2,
+    "category-slug": "ads",
+    "name": "Real Estate",
+    "negativePrompt": "dark, blurry, unappealing, noisy, unprofessional",
+    "prompt": "Real estate photography style {prompt} . Professional, inviting, well-lit, high-resolution, property-focused, commercial, highly detailed",
+    "style": "Real Estate"
+  },
+  {
+    "category": "Ads",
+    "category-order": 2,
+    "category-slug": "ads",
+    "name": "Retail",
+    "negativePrompt": "noisy, blurry, amateurish, sloppy, unattractive",
+    "prompt": "Retail packaging style {prompt} . Vibrant, enticing, commercial, product-focused, eye-catching, professional, highly detailed",
+    "style": "Retail"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Abstract",
+    "negativePrompt": "realistic, photographic, figurative, concrete",
+    "prompt": "Abstract style {prompt} . Non-representational, colors and shapes, expression of feelings, imaginative, highly detailed",
+    "style": "Abstract"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Abstract Expressionism",
+    "negativePrompt": "realistic, photorealistic, low contrast, plain, simple, monochrome",
+    "prompt": "abstract expressionist painting {prompt} . energetic brushwork, bold colors, abstract forms, expressive, emotional",
+    "style": "Abstract Expressionism"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Art Deco",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, modernist, minimalist",
+    "prompt": "Art Deco style {prompt} . geometric shapes, bold colors, luxurious, elegant, decorative, symmetrical, ornate, detailed",
+    "style": "Art Deco"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Art Nouveau",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, modernist, minimalist",
+    "prompt": "Art Nouveau style {prompt} . elegant, decorative, curvilinear forms, nature-inspired, ornate, detailed",
+    "style": "Art Nouveau"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Cubist",
+    "negativePrompt": "anime, photorealistic, 35mm film, deformed, glitch, low contrast, noisy",
+    "prompt": "Cubist artwork {prompt} . Geometric shapes, abstract, innovative, revolutionary",
+    "style": "Cubist"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Expressionist",
+    "negativePrompt": "realism, symmetry, quiet, calm, photo",
+    "prompt": "expressionist {prompt} . raw, emotional, dynamic, distortion for emotional effect, vibrant, use of unusual colors, detailed",
+    "style": "Expressionist"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Graffiti",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic",
+    "prompt": "Graffiti style {prompt} . Street art, vibrant, urban, detailed, tag, mural",
+    "style": "Graffiti"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Hyperrealism",
+    "negativePrompt": "simplified, abstract, unrealistic, impressionistic, low resolution",
+    "prompt": "Hyperrealistic art {prompt} . Extremely high-resolution details, photographic, realism pushed to extreme, fine texture, incredibly lifelike",
+    "style": "Hyperrealism"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Impressionist",
+    "negativePrompt": "anime, photorealistic, 35mm film, deformed, glitch, low contrast, noisy",
+    "prompt": "Impressionist painting {prompt} . Loose brushwork, vibrant color, light and shadow play, captures feeling over form",
+    "style": "Impressionist"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Pointillism",
+    "negativePrompt": "line drawing, smooth shading, large color fields, simplistic",
+    "prompt": "Pointillism style {prompt} . Composed entirely of small, distinct dots of color, vibrant, highly detailed",
+    "style": "Pointillism"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Pop Art",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, minimalist",
+    "prompt": "Pop Art style {prompt} . Bright colors, bold outlines, popular culture themes, ironic or kitsch",
+    "style": "Pop Art"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Psychedelic",
+    "negativePrompt": "monochrome, black and white, low contrast, realistic, photorealistic, plain, simple",
+    "prompt": "Psychedelic style {prompt} . Vibrant colors, swirling patterns, abstract forms, surreal, trippy",
+    "style": "Psychedelic"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Renaissance",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, modernist, minimalist, abstract",
+    "prompt": "Renaissance style {prompt} . Realistic, perspective, light and shadow, religious or mythological themes, highly detailed",
+    "style": "Renaissance"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Steampunk",
+    "negativePrompt": "deformed, glitch, noisy, low contrast, anime, photorealistic",
+    "prompt": "Steampunk style {prompt} . Antique, mechanical, brass and copper tones, gears, intricate, detailed",
+    "style": "Steampunk"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Surrealist",
+    "negativePrompt": "anime, photorealistic, realistic, deformed, glitch, noisy, low contrast",
+    "prompt": "Surrealist art {prompt} . Dreamlike, mysterious, provocative, symbolic, intricate, detailed",
+    "style": "Surrealist"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Typography",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic",
+    "prompt": "Typographic art {prompt} . Stylized, intricate, detailed, artistic, text-based",
+    "style": "Typography"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Watercolor",
+    "negativePrompt": "anime, photorealistic, 35mm film, deformed, glitch, low contrast, noisy",
+    "prompt": "Watercolor painting {prompt} . Vibrant, beautiful, painterly, detailed, textural, artistic",
+    "style": "Watercolor"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Avant-garde",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Avant-garde, {prompt}, unusual, experimental, avant-garde art",
+    "style": "Avant-garde"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Baroque",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Baroque, {prompt}, dramatic, exuberant, grandeur, baroque art",
+    "style": "Baroque"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Bauhaus-Style Poster",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Bauhaus-Style Poster, {prompt}, simple geometric shapes, clean lines, primary colors, Bauhaus-Style Poster",
+    "style": "Bauhaus-Style Poster"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Caricature",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realistic",
+    "prompt": "Caricature, {prompt}, exaggerated, comical, caricature",
+    "style": "Caricature"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Cel Shading",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Cel Shaded Art, {prompt}, 2D, flat color, toon shading, cel shaded style",
+    "style": "Cel Shaded Art"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Character Design",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Character Design Sheet, {prompt}, character reference sheet, character turn around",
+    "style": "Character Design Sheet"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Color Field Painting",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Color Field Painting, {prompt}, abstract, simple, geometic, color field painting style",
+    "style": "Color Field Painting"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Conceptual Art",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Conceptual Art, {prompt}, concept art",
+    "style": "Conceptual Art"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Dadaism",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Dadaism Art, {prompt}, satirical, nonsensical, dadaism art",
+    "style": "Dadaism"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Dark Fantasy",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, bright, sunny",
+    "prompt": "Dark Fantasy Art, {prompt}, dark, moody, dark fantasy style",
+    "style": "Dark Fantasy"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Fauvism",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Fauvism Art, {prompt}, painterly, bold colors, textured brushwork, fauvism art",
+    "style": "Fauvism"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Ink Dripping",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, colorful, vibrant",
+    "prompt": "Ink Dripping Drawing, {prompt}, ink drawing, dripping ink",
+    "style": "Ink Dripping Drawing"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "name": "Japanese Ink",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, colorful, vibrant",
+    "prompt": "Japanese Ink Drawing, {prompt}, ink drawing, inkwash, Japanese Ink Drawing",
+    "style": "Japanese Ink Drawing"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Moebius SDXL (Jean Giraud)",
+        "url": "https://civitai.com/models/123274"
+      }
+    ],
+    "name": "Moebius",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:moebius-xl:0.8> moebzxl, moebius, Jean Giraud",
+    "style": "Moebius"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Crayon Style",
+        "url": "https://civitai.com/models/120853?modelVersionId=131462"
+      }
+    ],
+    "name": "Crayon",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:crayons_v1_sdxl:1>",
+    "style": "Crayon"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Junji Ito Style (XL)",
+        "url": "https://civitai.com/models/79155?modelVersionId=131386"
+      }
+    ],
+    "name": "Junji Ito",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:XL_itoStyleLycoris:1>",
+    "style": "Junji Ito"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "John Berkey Style",
+        "url": "https://civitai.com/models/71182?modelVersionId=153838"
+      }
+    ],
+    "name": "John Berkey",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:John Berkey Style:1> John Berkey Style page",
+    "style": "John Berkey"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Folk Art",
+        "url": "https://civitai.com/models/98226?modelVersionId=153770"
+      }
+    ],
+    "name": "Folk Art",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:Folk Art:1> Folk Art page",
+    "style": "Folk Art"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "PE Shitty FanArt",
+        "url": "https://civitai.com/models/128456"
+      }
+    ],
+    "name": "Terrible FanArt",
+    "negativePrompt": "",
+    "prompt": "<lora:PE_TerribleFanArtV1:0.8> PETerribleFanArt, badly drawn, terrible drawing, ugly,creepy, {prompt}",
+    "style": "Terrible FanArt"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Salvador Dali SDXL 1.0 art style lora",
+        "url": "https://civitai.com/models/118992"
+      }
+    ],
+    "name": "Dali",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:d4lixl:1> d4lixl",
+    "style": "Dali"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Biomechanical",
+    "negativePrompt": "natural, rustic, primitive, organic, simplistic",
+    "prompt": "biomechanical style {prompt} . blend of organic and mechanical elements, futuristic, cybernetic, detailed, intricate",
+    "style": "Biomechanical"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Biomechanical Cyberpunk",
+    "negativePrompt": "natural, colorful, deformed, sketch, low contrast, watercolor",
+    "prompt": "biomechanical cyberpunk {prompt} . cybernetics, human-machine fusion, dystopian, organic meets artificial, dark, intricate, highly detailed",
+    "style": "Biomechanical Cyberpunk"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Cybernetic",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, historical, medieval",
+    "prompt": "cybernetic style {prompt} . futuristic, technological, cybernetic enhancements, robotics, artificial intelligence themes",
+    "style": "Cybernetic"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Cybernetic Robot",
+    "negativePrompt": "organic, natural, human, sketch, watercolor, low contrast",
+    "prompt": "cybernetic robot {prompt} . android, AI, machine, metal, wires, tech, futuristic, highly detailed",
+    "style": "Cybernetic Robot"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Cyberpunk Cityscape",
+    "negativePrompt": "natural, rural, deformed, low contrast, black and white, sketch, watercolor",
+    "prompt": "cyberpunk cityscape {prompt} . neon lights, dark alleys, skyscrapers, futuristic, vibrant colors, high contrast, highly detailed",
+    "style": "Cyberpunk Cityscape"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Futuristic",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, vintage, antique",
+    "prompt": "futuristic style {prompt} . sleek, modern, ultramodern, high tech, detailed",
+    "style": "Futuristic"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Retro Cyberpunk",
+    "negativePrompt": "modern, desaturated, black and white, realism, low contrast",
+    "prompt": "retro cyberpunk {prompt} . 80's inspired, synthwave, neon, vibrant, detailed, retro futurism",
+    "style": "Retro Cyberpunk"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Retro Futurism",
+    "negativePrompt": "contemporary, realistic, rustic, primitive",
+    "prompt": "retro-futuristic {prompt} . vintage sci-fi, 50s and 60s style, atomic age, vibrant, highly detailed",
+    "style": "Retro Futurism"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Sci-Fi",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, historical, medieval",
+    "prompt": "sci-fi style {prompt} . futuristic, technological, alien worlds, space themes, advanced civilizations",
+    "style": "Sci-Fi"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Vaporwave",
+    "negativePrompt": "monochrome, muted colors, realism, rustic, minimalist, dark",
+    "prompt": "vaporwave style {prompt} . retro aesthetic, cyberpunk, vibrant, neon colors, vintage 80s and 90s style, highly detailed",
+    "style": "Vaporwave"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Glitchcore",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Glitchcore Art Style, {prompt}, dynamic, dramatic, distorted, vibrant colors, glitchcore art style",
+    "style": "Glitchcore"
+  },
+  {
+    "category": "Futuristic",
+    "category-order": 4,
+    "category-slug": "futur",
+    "name": "Glo-fi",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Glo-fi Art Style, {prompt}, dynamic, dramatic, vibrant colors, glo-fi art style",
+    "style": "Glo-fi"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Bubble Bobble",
+    "negativePrompt": "realistic, modern, photorealistic, violent, horror",
+    "prompt": "Bubble Bobble style {prompt} . 8-bit, cute, pixelated, fantasy, vibrant, reminiscent of Bubble Bobble game",
+    "style": "Bubble Bobble"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Cyberpunk 2077",
+    "negativePrompt": "historical, natural, rustic, low detailed",
+    "prompt": "cyberpunk game style {prompt} . neon, dystopian, futuristic, digital, vibrant, detailed, high contrast, reminiscent of cyberpunk genre video games",
+    "style": "Cyberpunk Game"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Fighting Game",
+    "negativePrompt": "peaceful, calm, minimalist, photorealistic",
+    "prompt": "Fighting game style {prompt} . Dynamic, vibrant, action-packed, detailed character design, reminiscent of fighting video games",
+    "style": "Fighting Game"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "GTA",
+    "negativePrompt": "realistic, black and white, low contrast, impressionist, cubist, noisy, blurry, deformed",
+    "prompt": "GTA-style artwork {prompt} . Satirical, exaggerated, pop art style, vibrant colors, iconic characters, action-packed",
+    "style": "GTA"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Super Mario",
+    "negativePrompt": "realistic, modern, horror, dystopian, violent",
+    "prompt": "Super Mario style {prompt} . Vibrant, cute, cartoony, fantasy, playful, reminiscent of Super Mario series",
+    "style": "Super Mario"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Minecraft",
+    "negativePrompt": "smooth, realistic, detailed, photorealistic, noise, blurry, deformed",
+    "prompt": "Minecraft style {prompt} . Blocky, pixelated, vibrant colors, recognizable characters and objects, game assets",
+    "style": "Minecraft"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Pokémon",
+    "negativePrompt": "realistic, modern, horror, dystopian, violent",
+    "prompt": "Pokémon style {prompt} . Vibrant, cute, anime, fantasy, reminiscent of Pokémon series",
+    "style": "Pokémon"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Retro Arcade",
+    "negativePrompt": "modern, ultra-high resolution, photorealistic, 3D",
+    "prompt": "Retro arcade style {prompt} . 8-bit, pixelated, vibrant, classic video game, old school gaming, reminiscent of 80s and 90s arcade games",
+    "style": "Retro Arcade"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Retro Game",
+    "negativePrompt": "realistic, photorealistic, 35mm film, deformed, glitch, low contrast, noisy",
+    "prompt": "Retro game art {prompt} . 16-bit, vibrant colors, pixelated, nostalgic, charming, fun",
+    "style": "Retro Game"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "RPG Fantasy Game",
+    "negativePrompt": "sci-fi, modern, urban, futuristic, low detailed",
+    "prompt": "Role-playing game (RPG) style fantasy {prompt} . Detailed, vibrant, immersive, reminiscent of high fantasy RPG games",
+    "style": "RPG Fantasy Game"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Strategy Game",
+    "negativePrompt": "first-person view, modern, photorealistic",
+    "prompt": "Strategy game style {prompt} . Overhead view, detailed map, units, reminiscent of real-time strategy video games",
+    "style": "Strategy Game"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Street Fighter",
+    "negativePrompt": "3D, realistic, modern, photorealistic, turn-based strategy",
+    "prompt": "Street Fighter style {prompt} . Vibrant, dynamic, arcade, 2D fighting game, highly detailed, reminiscent of Street Fighter series",
+    "style": "Street Fighter"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Legend of Zelda",
+    "negativePrompt": "sci-fi, modern, realistic, horror",
+    "prompt": "Legend of Zelda style {prompt} . Vibrant, fantasy, detailed, epic, heroic, reminiscent of The Legend of Zelda series",
+    "style": "Legend of Zelda"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "name": "Fortnite",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, photo, realistic",
+    "prompt": "Fortnite Art Style, {prompt}, 3D cartoon, colorful, Fortnite Art Style",
+    "style": "Fortnite Art Style"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "lora": [
+      {
+        "title": "PS1 Graphics SDXL",
+        "url": "https://civitai.com/models/129556?modelVersionId=147912"
+      }
+    ],
+    "name": "PS1",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:ps1_style_SDXL_v2:1> ps1 style",
+    "style": "PS1"
+  },
+  {
+    "category": "Game",
+    "category-order": 5,
+    "category-slug": "game",
+    "lora": [
+      {
+        "title": "Voxel XL",
+        "url": "https://civitai.com/models/118536/voxel-xl"
+      }
+    ],
+    "name": "Voxel",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:VoxelXL_v1:1> voxel style",
+    "style": "Voxel"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Architectural",
+    "negativePrompt": "curved lines, ornate, baroque, abstract, grunge",
+    "prompt": "Architectural style {prompt} . Clean lines, geometric shapes, minimalist, modern, architectural drawing, highly detailed",
+    "style": "Architectural"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Disco",
+    "negativePrompt": "minimalist, rustic, monochrome, contemporary, simplistic",
+    "prompt": "Disco-themed {prompt} . Vibrant, groovy, retro 70s style, shiny disco balls, neon lights, dance floor, highly detailed",
+    "style": "Disco"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Dreamscape",
+    "negativePrompt": "realistic, concrete, ordinary, mundane",
+    "prompt": "Dreamscape {prompt} . Surreal, ethereal, dreamy, mysterious, fantasy, highly detailed",
+    "style": "Dreamscape"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Dystopian",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, cheerful, optimistic, vibrant, colorful",
+    "prompt": "Dystopian style {prompt} . Bleak, post-apocalyptic, somber, dramatic, highly detailed",
+    "style": "Dystopian"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Fairy Tale",
+    "negativePrompt": "realistic, modern, ordinary, mundane",
+    "prompt": "Fairy tale {prompt} . Magical, fantastical, enchanting, storybook style, highly detailed",
+    "style": "Fairy Tale"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Gothic",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, cheerful, optimistic",
+    "prompt": "Gothic style {prompt} . Dark, mysterious, haunting, dramatic, ornate, detailed",
+    "style": "Gothic"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Grunge",
+    "negativePrompt": "smooth, clean, minimalist, sleek, modern, photorealistic",
+    "prompt": "Grunge style {prompt} . Textured, distressed, vintage, edgy, punk rock vibe, dirty, noisy",
+    "style": "Grunge"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Horror",
+    "negativePrompt": "cheerful, bright, vibrant, light-hearted, cute",
+    "prompt": "Horror-themed {prompt} . Eerie, unsettling, dark, spooky, suspenseful, grim, highly detailed",
+    "style": "Horror"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Kawaii",
+    "negativePrompt": "dark, scary, realistic, monochrome, abstract",
+    "prompt": "kawaii style {prompt} . cute, adorable, brightly colored, cheerful, anime influence, highly detailed",
+    "style": "Kawaii"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Lovecraftian",
+    "negativePrompt": "light-hearted, mundane, familiar, simplistic, realistic",
+    "prompt": "lovecraftian horror {prompt} . eldritch, cosmic horror, unknown, mysterious, surreal, highly detailed",
+    "style": "Lovecraftian"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Macabre",
+    "negativePrompt": "bright, cheerful, light-hearted, cartoonish, cute",
+    "prompt": "macabre style {prompt} . dark, gothic, grim, haunting, highly detailed",
+    "style": "Macabre"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Manga",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, Western comic style",
+    "prompt": "manga style {prompt} . vibrant, high-energy, detailed, iconic, Japanese comic style",
+    "style": "Manga"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Metropolis",
+    "negativePrompt": "rural, natural, rustic, historical, simple",
+    "prompt": "metropolis-themed {prompt} . urban, cityscape, skyscrapers, modern, futuristic, highly detailed",
+    "style": "Metropolis"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Minimalist",
+    "negativePrompt": "ornate, complicated, highly detailed, cluttered, disordered, messy, noisy",
+    "prompt": "Minimalist style {prompt} . Simple, clean, uncluttered, modern, elegant",
+    "style": "Minimalist"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Monochrome",
+    "negativePrompt": "colorful, vibrant, noisy, blurry, deformed",
+    "prompt": "Monochrome {prompt} . Black and white, contrast, tone, texture, detailed",
+    "style": "Monochrome"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Nautical",
+    "negativePrompt": "landlocked, desert, mountains, urban, rustic",
+    "prompt": "Nautical-themed {prompt} . Sea, ocean, ships, maritime, beach, marine life, highly detailed",
+    "style": "Nautical"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Space",
+    "negativePrompt": "earthly, mundane, ground-based, realism",
+    "prompt": "Space-themed {prompt} . Cosmic, celestial, stars, galaxies, nebulas, planets, science fiction, highly detailed",
+    "style": "Space"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Stained Glass",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic",
+    "prompt": "Stained glass style {prompt} . Vibrant, beautiful, translucent, intricate, detailed",
+    "style": "Stained Glass"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Techwear Fashion",
+    "negativePrompt": "vintage, rural, colorful, low contrast, realism, sketch, watercolor",
+    "prompt": "Techwear fashion {prompt} . Futuristic, cyberpunk, urban, tactical, sleek, dark, highly detailed",
+    "style": "Techwear Fashion"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Academia",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, grunge, sloppy, unkempt",
+    "prompt": "Academia, {prompt}, preppy Ivy League style, stark, dramatic, chic boarding school, academia",
+    "style": "Academia"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Action Figure",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Action Figure, {prompt}, plastic collectable action figure, collectable toy action figure",
+    "style": "Action Figure"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Astral Aura",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Astral Aura, {prompt}, astral, colorful aura, vibrant energy",
+    "style": "Astral Aura"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Blueprint",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Blueprint Schematic Drawing, {prompt}, technical drawing, blueprint, schematic",
+    "style": "Blueprint Schematic Drawing"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Dark Moody",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, vibrant, colorful, bright",
+    "prompt": "Dark Moody Atmosphere, {prompt}, dramatic, mysterious, dark moody atmosphere",
+    "style": "Dark Moody Atmosphere"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Logo",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Logo Design, {prompt}, dynamic graphic art, vector art, minimalist, professional logo design",
+    "style": "Logo Design"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Medievalism",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Medievalism, {prompt}, inspired by The Middle Ages, medieval art, elaborate patterns and decoration, Medievalism",
+    "style": "Medievalism"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Terragen",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Terragen, {prompt}, beautiful massive landscape, epic scenery, Terragen",
+    "style": "Terragen"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Tribal",
+    "negativePrompt": "modern, futuristic, minimalist, pastel",
+    "prompt": "Tribal style {prompt} . Indigenous, ethnic, traditional patterns, bold, natural colors, highly detailed",
+    "style": "Tribal"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "name": "Zentangle",
+    "negativePrompt": "colorful, representative, simplistic, large fields of color",
+    "prompt": "Zentangle {prompt} . Intricate, abstract, monochrome, patterns, meditative, highly detailed",
+    "style": "Zentangle"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "WowifierXL",
+        "url": "https://civitai.com/models/117041"
+      }
+    ],
+    "name": "WOW-ifier",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:wowifier-xl:0.8> art by mooncryptowow",
+    "style": "WOW-ifier"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "Fx-Monsters",
+        "url": "https://civitai.com/models/86377?modelVersionId=138388"
+      }
+    ],
+    "name": "Fx Monster",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:fx-monsters-xl:0.6> fx-monsters, creepy, creature, melting, bloody, screaming",
+    "style": "Fx Monster"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "Perfect Eyes XL",
+        "url": "https://civitai.com/models/118427"
+      }
+    ],
+    "name": "Perfect Eyes",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:perfect-eyes-xl:1> perfecteyes",
+    "style": "Perfect Eyes"
+  },
+  {
+    "category": "Papercraft",
+    "category-order": 6,
+    "category-slug": "paper",
+    "name": "Collage",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic",
+    "prompt": "Collage style {prompt} . Mixed media, layered, textural, detailed, artistic",
+    "style": "Collage"
+  },
+  {
+    "category": "Papercraft",
+    "category-order": 6,
+    "category-slug": "paper",
+    "name": "Flat Papercut",
+    "negativePrompt": "3D, high detail, noise, grainy, blurry, painting, drawing, photo, disfigured",
+    "prompt": "Flat papercut style {prompt} . Silhouette, clean cuts, paper, sharp edges, minimalist, color block",
+    "style": "Flat Papercut"
+  },
+  {
+    "category": "Papercraft",
+    "category-order": 6,
+    "category-slug": "paper",
+    "name": "Kirigami",
+    "negativePrompt": "painting, drawing, 2D, noisy, blurry, deformed",
+    "prompt": "Kirigami representation of {prompt} . 3D, paper folding, paper cutting, Japanese, intricate, symmetrical, precision, clean lines",
+    "style": "Kirigami"
+  },
+  {
+    "category": "Papercraft",
+    "category-order": 6,
+    "category-slug": "paper",
+    "name": "Paper Mache",
+    "negativePrompt": "2D, flat, photo, sketch, digital art, deformed, noisy, blurry",
+    "prompt": "Paper mache representation of {prompt} . 3D, sculptural, textured, handmade, vibrant, fun",
+    "style": "Paper Mache"
+  },
+  {
+    "category": "Papercraft",
+    "category-order": 6,
+    "category-slug": "paper",
+    "name": "Paper Quilling",
+    "negativePrompt": "photo, painting, drawing, 2D, flat, deformed, noisy, blurry",
+    "prompt": "Paper quilling art of {prompt} . Intricate, delicate, curling, rolling, shaping, coiling, loops, 3D, dimensional, ornamental",
+    "style": "Paper Quilling"
+  },
+  {
+    "category": "Papercraft",
+    "category-order": 6,
+    "category-slug": "paper",
+    "name": "Papercut Collage",
+    "negativePrompt": "photo, 3D, realistic, drawing, painting, high detail, disfigured",
+    "prompt": "Papercut collage of {prompt} . Mixed media, textured paper, overlapping, asymmetrical, abstract, vibrant",
+    "style": "Papercut Collage"
+  },
+  {
+    "category": "Papercraft",
+    "category-order": 6,
+    "category-slug": "paper",
+    "name": "Papercut Shadow Box",
+    "negativePrompt": "painting, drawing, photo, 2D, flat, high detail, blurry, noisy, disfigured",
+    "prompt": "3D papercut shadow box of {prompt} . Layered, dimensional, depth, silhouette, shadow, papercut, handmade, high contrast",
+    "style": "Papercut Shadow Box"
+  },
+  {
+    "category": "Papercraft",
+    "category-order": 6,
+    "category-slug": "paper",
+    "name": "Stacked Papercut",
+    "negativePrompt": "2D, flat, noisy, blurry, painting, drawing, photo, deformed",
+    "prompt": "Stacked papercut art of {prompt} . 3D, layered, dimensional, depth, precision cut, stacked layers, papercut, high contrast",
+    "style": "Stacked Papercut"
+  },
+  {
+    "category": "Papercraft",
+    "category-order": 6,
+    "category-slug": "paper",
+    "name": "Thick Layered Papercut",
+    "negativePrompt": "2D, flat, thin paper, low stack, smooth texture, painting, drawing, photo, deformed",
+    "prompt": "Thick layered papercut art of {prompt} . Deep 3D, volumetric, dimensional, depth, thick paper, high stack, heavy texture, tangible layers",
+    "style": "Thick Layered Papercut"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "Alien",
+    "negativePrompt": "earthly, mundane, common, realistic, simple",
+    "prompt": "Alien-themed {prompt} . Extraterrestrial, cosmic, otherworldly, mysterious, sci-fi, highly detailed",
+    "style": "Alien"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "Film Noir",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, vibrant, colorful",
+    "prompt": "Film noir style {prompt} . Monochrome, high contrast, dramatic shadows, 1940s style, mysterious, cinematic",
+    "style": "Film Noir"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "HDR",
+    "negativePrompt": "flat, low contrast, oversaturated, underexposed, overexposed, blurred, noisy",
+    "prompt": "HDR photo of {prompt} . High dynamic range, vivid, rich details, clear shadows and highlights, realistic, intense, enhanced contrast, highly detailed",
+    "style": "HDR"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "Long Exposure",
+    "negativePrompt": "static, noisy, deformed, shaky, abrupt, flat, low contrast",
+    "prompt": "Long exposure photo of {prompt} . Blurred motion, streaks of light, surreal, dreamy, ghosting effect, highly detailed",
+    "style": "Long Exposure"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "Neon Noir",
+    "negativePrompt": "bright, sunny, daytime, low contrast, black and white, sketch, watercolor",
+    "prompt": "Neon noir {prompt} . Cyberpunk, dark, rainy streets, neon signs, high contrast, low light, vibrant, highly detailed",
+    "style": "Neon Noir"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "Silhouette",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, color, realism, photorealistic",
+    "prompt": "Silhouette style {prompt} . High contrast, minimalistic, black and white, stark, dramatic",
+    "style": "Silhouette"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "Tilt-Shift",
+    "negativePrompt": "blurry, noisy, deformed, flat, low contrast, unrealistic, oversaturated, underexposed",
+    "prompt": "Tilt-shift photo of {prompt} . Selective focus, miniature effect, blurred background, highly detailed, vibrant, perspective control",
+    "style": "Tilt-Shift"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "Double Exposure",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Double Exposure Style, {prompt}, double image ghost effect, image combination, double exposure style",
+    "style": "Double Exposure"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "Faded Polaroid Photo",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast, vibrant, colorful",
+    "prompt": "Faded Polaroid Photo, {prompt}, analog, old faded photo, old polaroid",
+    "style": "Faded Polaroid Photo"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "Knolling Photography",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Knolling Photography, {prompt}, flat lay photography, object arrangment, knolling photography",
+    "style": "Knolling Photography"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "name": "Macro Photography",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "Macro Photography, {prompt}, close-up, macro 100mm, macro photography",
+    "style": "Macro Photography"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "lora": [
+      {
+        "title": "White Background",
+        "url": "https://civitai.com/models/119388/white-background"
+      }
+    ],
+    "name": "White Background",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:white_1_0:1> with a white background",
+    "style": "White Background"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "lora": [
+      {
+        "title": "Juggernaut Cinematic XL LoRA",
+        "url": "https://civitai.com/models/120663?modelVersionId=131991"
+      }
+    ],
+    "name": "Movie Still (Jugger XL)",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:jugger-xl:1> Movie Still",
+    "style": "Jugger XL (Movie Still)"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "lora": [
+      {
+        "title": "Juggernaut Cinematic XL LoRA",
+        "url": "https://civitai.com/models/120663?modelVersionId=131991"
+      }
+    ],
+    "name": "Film Still (Jugger XL)",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:jugger-xl:1> Film Still",
+    "style": "Jugger XL (Film Still)"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "lora": [
+      {
+        "title": "Juggernaut Cinematic XL LoRA",
+        "url": "https://civitai.com/models/120663?modelVersionId=131991"
+      }
+    ],
+    "name": "Cinematic Lighting (Jugger XL)",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:jugger-xl:1> Cinematic Lighting",
+    "style": "Jugger XL (Cinematic Lighting)"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "lora": [
+      {
+        "title": "Juggernaut Cinematic XL LoRA",
+        "url": "https://civitai.com/models/120663?modelVersionId=131991"
+      }
+    ],
+    "name": "Cinematic (Jugger XL)",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:jugger-xl:1> Cinematic",
+    "style": "Jugger XL (Cinematic)"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "lora": [
+      {
+        "title": "Juggernaut Cinematic XL LoRA",
+        "url": "https://civitai.com/models/120663?modelVersionId=131991"
+      }
+    ],
+    "name": "Cinematic Shot (Jugger XL)",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:jugger-xl:1> Cinematic Shot",
+    "style": "Jugger XL (Cinematic Shot)"
+  }
+]
