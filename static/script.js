@@ -90,6 +90,19 @@ const enableDisableLora = (displayLora) => {
   }
 };
 
+const enableDisableNSFW = (displayNSFW) => {
+  if (displayNSFW === "show") {
+    document.body.classList.add("display-nsfw");
+    document.body.classList.remove("hide-nsfw");
+  } else if (displayNSFW === "blur") {
+    document.body.classList.remove("display-nsfw");
+    document.body.classList.remove("hide-nsfw");
+  } else {
+    document.body.classList.remove("display-lora");
+    document.body.classList.add("hide-nsfw");
+  }
+};
+
 const testWebShare = async () => {
   if (navigator.share !== undefined) {
     document.body.classList.add("display-share");
@@ -102,12 +115,25 @@ const load = () => {
   testWebShare();
 
   const displayLora = localStorage.getItem("displayLora") === "true";
+  const displayNSFW = localStorage.getItem("displayNSFW") ?? "blur";
+
   enableDisableLora(displayLora);
+  enableDisableNSFW(displayNSFW);
+
   document.querySelector("#displayLora").checked = displayLora;
+  document.querySelector("#displayNSFW option").selected = false;
+  document.querySelector(
+    `#displayNSFW option[value="${displayNSFW}"]`
+  ).selected = true;
 
   document.querySelector("#displayLora").addEventListener("click", (event) => {
     enableDisableLora(event.target.checked);
     localStorage.setItem("displayLora", event.target.checked);
+  });
+
+  document.querySelector("#displayNSFW").addEventListener("change", (event) => {
+    enableDisableNSFW(event.target.value);
+    localStorage.setItem("displayNSFW", event.target.value);
   });
 
   document.querySelectorAll(".share-button").forEach((shareBtn) =>

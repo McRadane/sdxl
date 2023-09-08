@@ -16,7 +16,8 @@
       "steps": 20
     },
     "slug": "tattooed-women",
-    "title": "Tattooed Women"
+    "title": "Tattooed Women",
+    "nsfw": true
   },
   {
     "description": "A city skyline at sunset.",
@@ -73,7 +74,8 @@
       "steps": 20
     },
     "slug": "nude-women",
-    "title": "Nude Women"
+    "title": "Nude Women",
+    "nsfw": true
   },
   {
     "description": "A river in a forest.",

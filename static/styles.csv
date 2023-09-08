@@ -2,7 +2,7 @@ name,prompt,negative_prompt,
 ____Stability's AI____
 3D Model,"professional 3d model {prompt} . octane render, highly detailed, volumetric, dramatic lighting","ugly, deformed, noisy, low poly, blurry, painting"
 Analog Film,"analog film photo {prompt} . faded film, desaturated, 35mm photo, grainy, vignette, vintage, Kodachrome, Lomography, stained, highly detailed, found footage","painting, drawing, illustration, glitch, deformed, mutated, cross-eyed, ugly, disfigured"
-Anime,"anime artwork {prompt} . anime style, key visual, vibrant, studio anime, highly detailed","photo, deformed, black and white, realism, disfigured, low contrast"
+Anime,"anime artwork {prompt} . anime style, key visual, vibrant, studio anime,  highly detailed","photo, deformed, black and white, realism, disfigured, low contrast"
 Cinematic,"cinematic film still {prompt} . shallow depth of field, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy","anime, cartoon, graphic, text, painting, crayon, graphite, abstract, glitch, deformed, mutated, ugly, disfigured"
 Comic Book,"comic {prompt} . graphic illustration, comic art, graphic novel art, vibrant, highly detailed","photograph, deformed, glitch, noisy, realistic, stock photo"
 Craft Clay,"play-doh style {prompt} . sculpture, clay art, centered composition, Claymation","sloppy, messy, grainy, highly detailed, ultra textured, photo"
@@ -79,9 +79,9 @@ GTA,"GTA-style artwork {prompt} . Satirical, exaggerated, pop art style, vibrant
 Legend of Zelda,"Legend of Zelda style {prompt} . Vibrant, fantasy, detailed, epic, heroic, reminiscent of The Legend of Zelda series","sci-fi, modern, realistic, horror"
 Minecraft,"Minecraft style {prompt} . Blocky, pixelated, vibrant colors, recognizable characters and objects, game assets","smooth, realistic, detailed, photorealistic, noise, blurry, deformed"
 Pokémon,"Pokémon style {prompt} . Vibrant, cute, anime, fantasy, reminiscent of Pokémon series","realistic, modern, horror, dystopian, violent"
-RPG Fantasy Game,"Role-playing game (RPG) style fantasy {prompt} . Detailed, vibrant, immersive, reminiscent of high fantasy RPG games","sci-fi, modern, urban, futuristic, low detailed"
 Retro Arcade,"Retro arcade style {prompt} . 8-bit, pixelated, vibrant, classic video game, old school gaming, reminiscent of 80s and 90s arcade games","modern, ultra-high resolution, photorealistic, 3D"
 Retro Game,"Retro game art {prompt} . 16-bit, vibrant colors, pixelated, nostalgic, charming, fun","realistic, photorealistic, 35mm film, deformed, glitch, low contrast, noisy"
+RPG Fantasy Game,"Role-playing game (RPG) style fantasy {prompt} . Detailed, vibrant, immersive, reminiscent of high fantasy RPG games","sci-fi, modern, urban, futuristic, low detailed"
 Strategy Game,"Strategy game style {prompt} . Overhead view, detailed map, units, reminiscent of real-time strategy video games","first-person view, modern, photorealistic"
 Street Fighter,"Street Fighter style {prompt} . Vibrant, dynamic, arcade, 2D fighting game, highly detailed, reminiscent of Street Fighter series","3D, realistic, modern, photorealistic, turn-based strategy"
 Super Mario,"Super Mario style {prompt} . Vibrant, cute, cartoony, fantasy, playful, reminiscent of Super Mario series","realistic, modern, horror, dystopian, violent"
@@ -125,6 +125,7 @@ Kawaii,"kawaii style {prompt} . cute, adorable, brightly colored, cheerful, anim
 Logo,"Logo Design, {prompt}, dynamic graphic art, vector art, minimalist, professional logo design","ugly, deformed, noisy, blurry, low contrast"
 Lovecraftian,"lovecraftian horror {prompt} . eldritch, cosmic horror, unknown, mysterious, surreal, highly detailed","light-hearted, mundane, familiar, simplistic, realistic"
 Macabre,"macabre style {prompt} . dark, gothic, grim, haunting, highly detailed","bright, cheerful, light-hearted, cartoonish, cute"
+Manga,"manga style {prompt} . vibrant, high-energy, detailed, iconic, Japanese comic style","ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, Western comic style"
 Medievalism,"Medievalism, {prompt}, inspired by The Middle Ages, medieval art, elaborate patterns and decoration, Medievalism","ugly, deformed, noisy, blurry, low contrast"
 Metropolis,"metropolis-themed {prompt} . urban, cityscape, skyscrapers, modern, futuristic, highly detailed","rural, natural, rustic, historical, simple"
 Minimalist,"Minimalist style {prompt} . Simple, clean, uncluttered, modern, elegant","ornate, complicated, highly detailed, cluttered, disordered, messy, noisy"
@@ -136,22 +137,3 @@ Techwear Fashion,"Techwear fashion {prompt} . Futuristic, cyberpunk, urban, tact
 Terragen,"Terragen, {prompt}, beautiful massive landscape, epic scenery, Terragen","ugly, deformed, noisy, blurry, low contrast"
 Tribal,"Tribal style {prompt} . Indigenous, ethnic, traditional patterns, bold, natural colors, highly detailed","modern, futuristic, minimalist, pastel"
 Zentangle,"Zentangle {prompt} . Intricate, abstract, monochrome, patterns, meditative, highly detailed","colorful, representative, simplistic, large fields of color"
-____LoRA____
-Add Details XL (Least Details),"{prompt}, <lora:add-detail-xl:-3>",
-Add Details XL (Less Details),"{prompt}, <lora:add-detail-xl:-1>",
-Add Details XL (More Details),"{prompt}, <lora:add-detail-xl:1>",
-Add Details XL (Most Details),"{prompt}, <lora:add-detail-xl:3>",
-Crayon,"{prompt}, <lora:crayons_v1_sdxl:1>",
-Fx Monster,"{prompt}, <lora:fx-monsters-xl:0.6> fx-monsters, creepy, creature, melting, bloody, screaming",
-Jugger XL (Cinematic Lighting),"{prompt}, <lora:jugger-xl:1> Cinematic Lighting",
-Jugger XL (Cinematic Shot),"{prompt}, <lora:jugger-xl:1> Cinematic Shot",
-Jugger XL (Cinematic),"{prompt}, <lora:jugger-xl:1> Cinematic",
-Jugger XL (Film Still),"{prompt}, <lora:jugger-xl:1> Film Still",
-Jugger XL (Movie Still),"{prompt}, <lora:jugger-xl:1> Movie Still",
-Junji Ito,"{prompt}, <lora:XL_itoStyleLycoris:1>",
-Moebius,"{prompt}, <lora:moebius-xl:0.8> moebzxl, moebius, Jean Giraud",
-PS1,"{prompt}, <lora:ps1_style_SDXL_v2:1> ps1 style",
-Perfect Eyes,"{prompt}, <lora:perfect-eyes-xl:1> perfecteyes",
-Voxel,"{prompt}, <lora:VoxelXL_v1:1> voxel style",
-WOW-ifier,"{prompt}, <lora:wowifier-xl:0.8> art by mooncryptowow",
-White Background,"{prompt}, <lora:white_1_0:1> with a white background",

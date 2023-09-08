@@ -7,12 +7,12 @@ const matchStyleRaw = require("./match-style.json");
 const menu = require("./menu.json");
 
 const matchStyle = matchStyleRaw.sort((a, b) => {
-  if(a['category-order'] !== b['category-order']) {
-    return a['category-order'] - b['category-order'];
+  if (a["category-order"] !== b["category-order"]) {
+    return a["category-order"] - b["category-order"];
   }
 
   return a.name.localeCompare(b.name);
-})
+});
 
 const checkMissingStyles = (images, folder, prompts) => {
   const subject = menu.find((item) => item.slug === folder);
@@ -21,15 +21,22 @@ const checkMissingStyles = (images, folder, prompts) => {
 
     if (!found) {
       console.log(`Missing style ${style.style}`);
-      if(subject) {
-        if(style.prompt.includes('{prompt}')) {
-          prompts.push(`--prompt "${style.prompt.replace('{prompt}', subject.params.prompt)}" --negative_prompt "${subject.params.negativePrompt}" --seed ${subject.params.seed} --styles "${style.style}" --cfg_scale ${subject.params.cfg}`);
+      if (subject) {
+        if (style.prompt.includes("{prompt}")) {
+          prompts.push(
+            `--prompt "${style.prompt.replace(
+              "{prompt}",
+              subject.params.prompt
+            )}" --negative_prompt "${subject.params.negativePrompt}" --seed ${
+              subject.params.seed
+            } --styles "${style.style}" --cfg_scale ${subject.params.cfg}`
+          );
         } else {
-          prompts.push(`--prompt "${subject.params.prompt}, ${style.prompt}" --negative_prompt "${subject.params.negativePrompt}" --seed ${subject.params.seed} --styles "${style.style}" --cfg_scale ${subject.params.cfg}`);
+          prompts.push(
+            `--prompt "${subject.params.prompt}, ${style.prompt}" --negative_prompt "${subject.params.negativePrompt}" --seed ${subject.params.seed} --styles "${style.style}" --cfg_scale ${subject.params.cfg}`
+          );
         }
-        
       }
-     
     }
   });
 };
@@ -48,7 +55,7 @@ const generateImagesData = () => {
     );
     const files = fs.readdirSync(dir);
     const images = [
-      "title,filename,category,subject,prompt,negativePrompt,model,lora,sampler,cfg,steps,seed",
+      "title,filename,category,subject,prompt,negativePrompt,lora",
     ];
 
     files.forEach((file) => {
@@ -86,11 +93,9 @@ const generateImagesData = () => {
           images.push(
             `${style.name},${item.slug}/${file},${style.category},${
               item.title
-            },"${promptClean}","${negativePromptClean}","${
-              item.params.model.hash
-            }","${lora.map((lora) => lora.title).join(",")}",${
-              item.params.sampler
-            },${item.params.cfg},${item.params.steps},${item.params.seed}`
+            },"${promptClean}","${negativePromptClean}","${lora
+              .map((lora) => lora.title)
+              .join(",")}"`
           );
         }
       }
@@ -108,9 +113,7 @@ const generateImagesData = () => {
       `${style.category},${style["category-slug"]},${style["category-order"]},false`
     );
   });
-  categoryData.push(
-    `LoRA,lora,100,true`
-  );
+  categoryData.push(`LoRA,lora,100,true`);
 
   const lorasDataCSV = [
     "title,url",
@@ -152,18 +155,52 @@ const generateImagesData = () => {
   );
 };
 
+const generateStylesCSV = () => {
+  const styles = ["name,prompt,negative_prompt,"];
+  const categories = [];
+  matchStyle.forEach((style) => {
+    if (
+      style.category !== "No style" &&
+      (!style.lora || style.lora.length === 0)
+    ) {
+      if (!categories.includes(style.category)) {
+        categories.push(style.category);
+        styles.push(`____${style.category}____`);
+      }
+
+      styles.push(`${style.name},"${style.prompt}","${style.negativePrompt}"`);
+    }
+  });
+
+  fs.writeFileSync(
+    path.resolve(__dirname, "..", "static", "styles.csv"),
+    styles.join("\n")
+  );
+};
+
 const generatePages = () => {
   let menuSubjectPage = "";
+  const dataSubject = ["id,lora,model,nsfw,sampler,cfg,steps,seed"];
 
   menu.forEach((item) => {
     const lora = item.params.lora ?? [];
     menuSubjectPage += `- title: ${item.title}
-  href: /${item.slug}
+  id: ${item.slug}
   description: ${item.description}
   image: static/images/img-thumbs/${item.slug}/${item.slug}.jpg
   lora: ${lora.length !== 0 ?? false}
+  model: ${item.params.model.hash}
+  nsfw: ${item.nsfw ?? false}
 
 `;
+
+    dataSubject.push(
+      `${item.slug},${lora.length !== 0 ?? false},${item.params.model.hash},${
+        item.nsfw ?? false
+      },${item.params.sampler},${item.params.cfg},${item.params.steps},${
+        item.params.seed
+      }`
+    );
 
     const page = `---
 layout: gallery
@@ -244,6 +281,11 @@ title: ${categoryTitle}
   });
 
   fs.writeFileSync(
+    path.resolve(__dirname, "..", "_data", "data-subject.csv"),
+    dataSubject.join("\n")
+  );
+
+  fs.writeFileSync(
     path.resolve(__dirname, "..", "_data", "menu-subject.yml"),
     menuSubjectPage
   );
@@ -265,9 +307,10 @@ title: ${categoryTitle}
 
     if (category !== "Stability's AI") {
       menuStylePage += `- title: ${categoryTitle}
-  href: /styles-${categorySlug}
+  id: styles-${categorySlug}
   image: static/images/img-thumbs/${categorySlug}.jpg
   lora: ${category === "LoRA"}
+  nsfw: false
 
 `;
     }
@@ -359,7 +402,8 @@ const checkImages = async () => {
 
       if (!skip && !fs.existsSync(sourceImage.replace(".jpg", ".png"))) {
         console.log(
-          `Deleting ${path.resolve(imagesFolder, folder, normalImage)}`, sourceImage
+          `Deleting ${path.resolve(imagesFolder, folder, normalImage)}`,
+          sourceImage
         );
         fs.rmSync(path.resolve(imagesFolder, folder, normalImage));
       }
@@ -385,9 +429,10 @@ const checkImages = async () => {
     });
   });
 
-  fs.writeFileSync(path.resolve(__dirname, 'prompts.txt'), prompts.join('\n'));
+  fs.writeFileSync(path.resolve(__dirname, "prompts.txt"), prompts.join("\n"));
 };
 
 checkImages();
 generateImagesData();
 generatePages();
+generateStylesCSV();
