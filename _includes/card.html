@@ -5,9 +5,11 @@ site.data.data-models | where: 'hash', include.model %}
 <div class="{{ colClass }}">
   <div class="card mb-3">
     <a href="{{ site.baseurl }}{{ include.href }}">
+      {% if include.model %}
       <div class="ribbon-wrapper">
         <div class="ribbon">{{ model.first.title }}</div>
       </div>
+      {% endif %}
       <img src="{{ include.image }}" class="card-img-top" alt="{{ include.title }}" data-bs-toggle="modal"
         loading="lazy" />
     </a>
