@@ -1,54 +1,84 @@
 - title: Tattooed Women
   href: /tattooed-women
   description: A women with tattoo and blue hair.
-  image: static/images/img-thumbs/tattooed-women/00000000000000-None.jpg
+  image: static/images/img-thumbs/tattooed-women/tattooed-women.jpg
   lora: false
 
 - title: City Skyline
   href: /city
   description: A city skyline at sunset.
-  image: static/images/img-thumbs/city/00000000000000-None.jpg
+  image: static/images/img-thumbs/city/city.jpg
   lora: false
 
 - title: Modern House
   href: /house
   description: A modern house.
-  image: static/images/img-thumbs/house/20230829120950-None.jpg
+  image: static/images/img-thumbs/house/house.jpg
   lora: false
 
 - title: Nude Women
   href: /nude-women
   description: A nude women in darkness.
-  image: static/images/img-thumbs/nude-women/20230829102029-None.jpg
+  image: static/images/img-thumbs/nude-women/nude-women.jpg
   lora: false
 
 - title: Forest River
   href: /river
   description: A river in a forest.
-  image: static/images/img-thumbs/river/20230829154829-None.jpg
+  image: static/images/img-thumbs/river/river.jpg
   lora: false
 
 - title: Close-up Portrait (LoRA)
   href: /close-up-lora
   description: A close-up portrait of a ginger girl. Same as Close-up Portrait, but with a LoRA (Low-Rank Adaptation) to improve the quality of the eyes.
-  image: static/images/img-thumbs/close-up-lora/20230829151956-None.jpg
+  image: static/images/img-thumbs/close-up-lora/close-up-lora.jpg
   lora: true
 
 - title: Apple
   href: /apple
   description: A basket of apples.
-  image: static/images/img-thumbs/apple/20230831182605-None.jpg
+  image: static/images/img-thumbs/apple/apple.jpg
   lora: false
 
 - title: Supercar
   href: /supercar
   description: A supercar.
-  image: static/images/img-thumbs/supercar/20230831182517-None.jpg
+  image: static/images/img-thumbs/supercar/supercar.jpg
   lora: false
 
 - title: Close-up Portrait
   href: /close-up
   description: A close-up portrait of a ginger girl.
-  image: static/images/img-thumbs/close-up/20230901195949-None.jpg
+  image: static/images/img-thumbs/close-up/close-up.jpg
+  lora: false
+
+- title: Astronaut
+  href: /astronaut
+  description: An astronaut in space
+  image: static/images/img-thumbs/astronaut/astronaut.jpg
+  lora: false
+
+- title: Island
+  href: /island
+  description: An island in the ocean
+  image: static/images/img-thumbs/island/island.jpg
+  lora: false
+
+- title: Stormtrooper
+  href: /stormtrooper
+  description: A Stormtrooper about to shoot
+  image: static/images/img-thumbs/stormtrooper/stormtrooper.jpg
+  lora: false
+
+- title: Astronaut on mars
+  href: /astronaut-mars
+  description: An astronaut on mars, at sunset
+  image: static/images/img-thumbs/astronaut-mars/astronaut-mars.jpg
+  lora: false
+
+- title: Norwegian cat
+  href: /cat
+  description: Norwegian cat
+  image: static/images/img-thumbs/cat/cat.jpg
   lora: false
 

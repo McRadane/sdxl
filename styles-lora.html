@@ -3,47 +3,51 @@ layout: gallery
 title: LoRA
 ---
 
-{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up-lora | concat: site.data.apple | concat: site.data.supercar | concat: site.data.close-up %}
+{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up-lora | concat: site.data.apple | concat: site.data.supercar | concat: site.data.close-up | concat: site.data.astronaut | concat: site.data.island | concat: site.data.stormtrooper | concat: site.data.astronaut-mars | concat: site.data.cat %}
 
-{% assign perfecteyes = everything | where: 'title', 'Perfect Eyes' %}
+{% assign leastdetails = everything | where: 'title', 'Least Details' %}
 
-{% include gallery.html data = perfecteyes title = "Perfect Eyes" id = 'perfecteyes' %}
+{% include gallery.html data = leastdetails title = "Least Details" id = 'leastdetails' %}
 
-{% assign juggerxlmoviestill = everything | where: 'title', 'Jugger XL (Movie Still)' %}
+{% assign lessdetails = everything | where: 'title', 'Less Details' %}
 
-{% include gallery.html data = juggerxlmoviestill title = "Jugger XL (Movie Still)" id = 'juggerxlmoviestill' %}
+{% include gallery.html data = lessdetails title = "Less Details" id = 'lessdetails' %}
 
-{% assign juggerxlfilmstill = everything | where: 'title', 'Jugger XL (Film Still)' %}
+{% assign moredetails = everything | where: 'title', 'More Details' %}
 
-{% include gallery.html data = juggerxlfilmstill title = "Jugger XL (Film Still)" id = 'juggerxlfilmstill' %}
+{% include gallery.html data = moredetails title = "More Details" id = 'moredetails' %}
 
-{% assign juggerxlcinematiclighting = everything | where: 'title', 'Jugger XL (Cinematic Lighting)' %}
+{% assign mostdetails = everything | where: 'title', 'Most Details' %}
 
-{% include gallery.html data = juggerxlcinematiclighting title = "Jugger XL (Cinematic Lighting)" id = 'juggerxlcinematiclighting' %}
+{% include gallery.html data = mostdetails title = "Most Details" id = 'mostdetails' %}
 
-{% assign juggerxlcinematic = everything | where: 'title', 'Jugger XL (Cinematic)' %}
+{% assign crayon = everything | where: 'title', 'Crayon' %}
 
-{% include gallery.html data = juggerxlcinematic title = "Jugger XL (Cinematic)" id = 'juggerxlcinematic' %}
+{% include gallery.html data = crayon title = "Crayon" id = 'crayon' %}
 
-{% assign juggerxlcinematicshot = everything | where: 'title', 'Jugger XL (Cinematic Shot)' %}
+{% assign dali = everything | where: 'title', 'Dali' %}
 
-{% include gallery.html data = juggerxlcinematicshot title = "Jugger XL (Cinematic Shot)" id = 'juggerxlcinematicshot' %}
+{% include gallery.html data = dali title = "Dali" id = 'dali' %}
+
+{% assign folkart = everything | where: 'title', 'Folk Art' %}
+
+{% include gallery.html data = folkart title = "Folk Art" id = 'folkart' %}
+
+{% assign johnberkey = everything | where: 'title', 'John Berkey' %}
+
+{% include gallery.html data = johnberkey title = "John Berkey" id = 'johnberkey' %}
+
+{% assign junjiito = everything | where: 'title', 'Junji Ito' %}
+
+{% include gallery.html data = junjiito title = "Junji Ito" id = 'junjiito' %}
 
 {% assign moebius = everything | where: 'title', 'Moebius' %}
 
 {% include gallery.html data = moebius title = "Moebius" id = 'moebius' %}
 
-{% assign wowifier = everything | where: 'title', 'WOW-ifier' %}
+{% assign terriblefanart = everything | where: 'title', 'Terrible FanArt' %}
 
-{% include gallery.html data = wowifier title = "WOW-ifier" id = 'wowifier' %}
-
-{% assign whitebackground = everything | where: 'title', 'White Background' %}
-
-{% include gallery.html data = whitebackground title = "White Background" id = 'whitebackground' %}
-
-{% assign fxmonster = everything | where: 'title', 'Fx Monster' %}
-
-{% include gallery.html data = fxmonster title = "Fx Monster" id = 'fxmonster' %}
+{% include gallery.html data = terriblefanart title = "Terrible FanArt" id = 'terriblefanart' %}
 
 {% assign ps = everything | where: 'title', 'PS1' %}
 
@@ -53,26 +57,38 @@ title: LoRA
 
 {% include gallery.html data = voxel title = "Voxel" id = 'voxel' %}
 
-{% assign crayon = everything | where: 'title', 'Crayon' %}
+{% assign cinematicjuggerxl = everything | where: 'title', 'Cinematic (Jugger XL)' %}
 
-{% include gallery.html data = crayon title = "Crayon" id = 'crayon' %}
+{% include gallery.html data = cinematicjuggerxl title = "Cinematic (Jugger XL)" id = 'cinematicjuggerxl' %}
 
-{% assign junjiito = everything | where: 'title', 'Junji Ito' %}
+{% assign cinematiclightingjuggerxl = everything | where: 'title', 'Cinematic Lighting (Jugger XL)' %}
 
-{% include gallery.html data = junjiito title = "Junji Ito" id = 'junjiito' %}
+{% include gallery.html data = cinematiclightingjuggerxl title = "Cinematic Lighting (Jugger XL)" id = 'cinematiclightingjuggerxl' %}
 
-{% assign adddetailsxlmoredetails = everything | where: 'title', 'Add Details XL (More Details)' %}
+{% assign cinematicshotjuggerxl = everything | where: 'title', 'Cinematic Shot (Jugger XL)' %}
 
-{% include gallery.html data = adddetailsxlmoredetails title = "Add Details XL (More Details)" id = 'adddetailsxlmoredetails' %}
+{% include gallery.html data = cinematicshotjuggerxl title = "Cinematic Shot (Jugger XL)" id = 'cinematicshotjuggerxl' %}
 
-{% assign adddetailsxllessdetails = everything | where: 'title', 'Add Details XL (Less Details)' %}
+{% assign filmstilljuggerxl = everything | where: 'title', 'Film Still (Jugger XL)' %}
 
-{% include gallery.html data = adddetailsxllessdetails title = "Add Details XL (Less Details)" id = 'adddetailsxllessdetails' %}
+{% include gallery.html data = filmstilljuggerxl title = "Film Still (Jugger XL)" id = 'filmstilljuggerxl' %}
 
-{% assign adddetailsxlmostdetails = everything | where: 'title', 'Add Details XL (Most Details)' %}
+{% assign moviestilljuggerxl = everything | where: 'title', 'Movie Still (Jugger XL)' %}
 
-{% include gallery.html data = adddetailsxlmostdetails title = "Add Details XL (Most Details)" id = 'adddetailsxlmostdetails' %}
+{% include gallery.html data = moviestilljuggerxl title = "Movie Still (Jugger XL)" id = 'moviestilljuggerxl' %}
 
-{% assign adddetailsxlleastdetails = everything | where: 'title', 'Add Details XL (Least Details)' %}
+{% assign whitebackground = everything | where: 'title', 'White Background' %}
 
-{% include gallery.html data = adddetailsxlleastdetails title = "Add Details XL (Least Details)" id = 'adddetailsxlleastdetails' %}
+{% include gallery.html data = whitebackground title = "White Background" id = 'whitebackground' %}
+
+{% assign fxmonster = everything | where: 'title', 'Fx Monster' %}
+
+{% include gallery.html data = fxmonster title = "Fx Monster" id = 'fxmonster' %}
+
+{% assign perfecteyes = everything | where: 'title', 'Perfect Eyes' %}
+
+{% include gallery.html data = perfecteyes title = "Perfect Eyes" id = 'perfecteyes' %}
+
+{% assign wowifier = everything | where: 'title', 'WOW-ifier' %}
+
+{% include gallery.html data = wowifier title = "WOW-ifier" id = 'wowifier' %}

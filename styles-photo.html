@@ -3,23 +3,59 @@ layout: gallery
 title: Photo
 ---
 
-{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up-lora | concat: site.data.apple | concat: site.data.supercar | concat: site.data.close-up %}
+{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up-lora | concat: site.data.apple | concat: site.data.supercar | concat: site.data.close-up | concat: site.data.astronaut | concat: site.data.island | concat: site.data.stormtrooper | concat: site.data.astronaut-mars | concat: site.data.cat %}
 
 {% assign alien = everything | where: 'title', 'Alien' %}
 
 {% include gallery.html data = alien title = "Alien" id = 'alien' %}
 
+{% assign cinematicjuggerxl = everything | where: 'title', 'Cinematic (Jugger XL)' %}
+
+{% include gallery.html data = cinematicjuggerxl title = "Cinematic (Jugger XL)" id = 'cinematicjuggerxl' %}
+
+{% assign cinematiclightingjuggerxl = everything | where: 'title', 'Cinematic Lighting (Jugger XL)' %}
+
+{% include gallery.html data = cinematiclightingjuggerxl title = "Cinematic Lighting (Jugger XL)" id = 'cinematiclightingjuggerxl' %}
+
+{% assign cinematicshotjuggerxl = everything | where: 'title', 'Cinematic Shot (Jugger XL)' %}
+
+{% include gallery.html data = cinematicshotjuggerxl title = "Cinematic Shot (Jugger XL)" id = 'cinematicshotjuggerxl' %}
+
+{% assign doubleexposure = everything | where: 'title', 'Double Exposure' %}
+
+{% include gallery.html data = doubleexposure title = "Double Exposure" id = 'doubleexposure' %}
+
+{% assign fadedpolaroidphoto = everything | where: 'title', 'Faded Polaroid Photo' %}
+
+{% include gallery.html data = fadedpolaroidphoto title = "Faded Polaroid Photo" id = 'fadedpolaroidphoto' %}
+
 {% assign filmnoir = everything | where: 'title', 'Film Noir' %}
 
 {% include gallery.html data = filmnoir title = "Film Noir" id = 'filmnoir' %}
+
+{% assign filmstilljuggerxl = everything | where: 'title', 'Film Still (Jugger XL)' %}
+
+{% include gallery.html data = filmstilljuggerxl title = "Film Still (Jugger XL)" id = 'filmstilljuggerxl' %}
 
 {% assign hdr = everything | where: 'title', 'HDR' %}
 
 {% include gallery.html data = hdr title = "HDR" id = 'hdr' %}
 
+{% assign knollingphotography = everything | where: 'title', 'Knolling Photography' %}
+
+{% include gallery.html data = knollingphotography title = "Knolling Photography" id = 'knollingphotography' %}
+
 {% assign longexposure = everything | where: 'title', 'Long Exposure' %}
 
 {% include gallery.html data = longexposure title = "Long Exposure" id = 'longexposure' %}
+
+{% assign macrophotography = everything | where: 'title', 'Macro Photography' %}
+
+{% include gallery.html data = macrophotography title = "Macro Photography" id = 'macrophotography' %}
+
+{% assign moviestilljuggerxl = everything | where: 'title', 'Movie Still (Jugger XL)' %}
+
+{% include gallery.html data = moviestilljuggerxl title = "Movie Still (Jugger XL)" id = 'moviestilljuggerxl' %}
 
 {% assign neonnoir = everything | where: 'title', 'Neon Noir' %}
 
@@ -33,18 +69,6 @@ title: Photo
 
 {% include gallery.html data = tiltshift title = "Tilt-Shift" id = 'tiltshift' %}
 
-{% assign doubleexposure = everything | where: 'title', 'Double Exposure' %}
+{% assign whitebackground = everything | where: 'title', 'White Background' %}
 
-{% include gallery.html data = doubleexposure title = "Double Exposure" id = 'doubleexposure' %}
-
-{% assign fadedpolaroidphoto = everything | where: 'title', 'Faded Polaroid Photo' %}
-
-{% include gallery.html data = fadedpolaroidphoto title = "Faded Polaroid Photo" id = 'fadedpolaroidphoto' %}
-
-{% assign knollingphotography = everything | where: 'title', 'Knolling Photography' %}
-
-{% include gallery.html data = knollingphotography title = "Knolling Photography" id = 'knollingphotography' %}
-
-{% assign macrophotography = everything | where: 'title', 'Macro Photography' %}
-
-{% include gallery.html data = macrophotography title = "Macro Photography" id = 'macrophotography' %}
+{% include gallery.html data = whitebackground title = "White Background" id = 'whitebackground' %}

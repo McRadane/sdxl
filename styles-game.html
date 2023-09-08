@@ -3,7 +3,7 @@ layout: gallery
 title: Game
 ---
 
-{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up-lora | concat: site.data.apple | concat: site.data.supercar | concat: site.data.close-up %}
+{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up-lora | concat: site.data.apple | concat: site.data.supercar | concat: site.data.close-up | concat: site.data.astronaut | concat: site.data.island | concat: site.data.stormtrooper | concat: site.data.astronaut-mars | concat: site.data.cat %}
 
 {% assign bubblebobble = everything | where: 'title', 'Bubble Bobble' %}
 
@@ -17,13 +17,17 @@ title: Game
 
 {% include gallery.html data = fightinggame title = "Fighting Game" id = 'fightinggame' %}
 
+{% assign fortnite = everything | where: 'title', 'Fortnite' %}
+
+{% include gallery.html data = fortnite title = "Fortnite" id = 'fortnite' %}
+
 {% assign gta = everything | where: 'title', 'GTA' %}
 
 {% include gallery.html data = gta title = "GTA" id = 'gta' %}
 
-{% assign supermario = everything | where: 'title', 'Super Mario' %}
+{% assign legendofzelda = everything | where: 'title', 'Legend of Zelda' %}
 
-{% include gallery.html data = supermario title = "Super Mario" id = 'supermario' %}
+{% include gallery.html data = legendofzelda title = "Legend of Zelda" id = 'legendofzelda' %}
 
 {% assign minecraft = everything | where: 'title', 'Minecraft' %}
 
@@ -32,6 +36,10 @@ title: Game
 {% assign pokmon = everything | where: 'title', 'Pokémon' %}
 
 {% include gallery.html data = pokmon title = "Pokémon" id = 'pokmon' %}
+
+{% assign ps = everything | where: 'title', 'PS1' %}
+
+{% include gallery.html data = ps title = "PS1" id = 'ps' %}
 
 {% assign retroarcade = everything | where: 'title', 'Retro Arcade' %}
 
@@ -53,10 +61,10 @@ title: Game
 
 {% include gallery.html data = streetfighter title = "Street Fighter" id = 'streetfighter' %}
 
-{% assign legendofzelda = everything | where: 'title', 'Legend of Zelda' %}
+{% assign supermario = everything | where: 'title', 'Super Mario' %}
 
-{% include gallery.html data = legendofzelda title = "Legend of Zelda" id = 'legendofzelda' %}
+{% include gallery.html data = supermario title = "Super Mario" id = 'supermario' %}
 
-{% assign fortnite = everything | where: 'title', 'Fortnite' %}
+{% assign voxel = everything | where: 'title', 'Voxel' %}
 
-{% include gallery.html data = fortnite title = "Fortnite" id = 'fortnite' %}
+{% include gallery.html data = voxel title = "Voxel" id = 'voxel' %}

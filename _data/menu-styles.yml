@@ -1,3 +1,8 @@
+- title: LoRA
+  href: /styles-lora
+  image: static/images/img-thumbs/lora.jpg
+  lora: true
+
 - title: Base
   href: /styles-base
   image: static/images/img-thumbs/base.jpg
@@ -23,11 +28,6 @@
   image: static/images/img-thumbs/game.jpg
   lora: false
 
-- title: Miscellaneous
-  href: /styles-miscellaneous
-  image: static/images/img-thumbs/miscellaneous.jpg
-  lora: false
-
 - title: Papercraft
   href: /styles-papercraft
   image: static/images/img-thumbs/papercraft.jpg
@@ -38,8 +38,8 @@
   image: static/images/img-thumbs/photo.jpg
   lora: false
 
-- title: LoRA
-  href: /styles-lora
-  image: static/images/img-thumbs/lora.jpg
-  lora: true
+- title: Miscellaneous
+  href: /styles-miscellaneous
+  image: static/images/img-thumbs/miscellaneous.jpg
+  lora: false
 

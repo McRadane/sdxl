@@ -43,12 +43,28 @@ var data = {
     {
       "title": "Juggernaut Cinematic XL LoRA",
       "url": "https://civitai.com/models/120663?modelVersionId=131991"
+    },
+    {
+      "title": "John Berkey Style",
+      "url": "https://civitai.com/models/71182?modelVersionId=153838"
+    },
+    {
+      "title": "Folk Art",
+      "url": "https://civitai.com/models/98226?modelVersionId=153770"
+    },
+    {
+      "title": "PE Shitty FanArt",
+      "url": "https://civitai.com/models/128456"
+    },
+    {
+      "title": "Salvador Dali SDXL 1.0 art style lora",
+      "url": "https://civitai.com/models/118992"
     }
   ],
   "models": [
     {
-      "title": "DreamShaper XL1.0",
       "hash": "0F1B80CFE8",
+      "title": "DreamShaper XL1.0",
       "url": "https://civitai.com/models/112902?modelVersionId=126688"
     }
   ]
