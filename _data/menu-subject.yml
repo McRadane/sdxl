@@ -1,90 +1,120 @@
 - title: Tattooed Women
-  href: /tattooed-women
+  id: tattooed-women
   description: A women with tattoo and blue hair.
   image: static/images/img-thumbs/tattooed-women/tattooed-women.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: true
 
 - title: City Skyline
-  href: /city
+  id: city
   description: A city skyline at sunset.
   image: static/images/img-thumbs/city/city.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Modern House
-  href: /house
+  id: house
   description: A modern house.
   image: static/images/img-thumbs/house/house.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Nude Women
-  href: /nude-women
+  id: nude-women
   description: A nude women in darkness.
   image: static/images/img-thumbs/nude-women/nude-women.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: true
 
 - title: Forest River
-  href: /river
+  id: river
   description: A river in a forest.
   image: static/images/img-thumbs/river/river.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Close-up Portrait (LoRA)
-  href: /close-up-lora
+  id: close-up-lora
   description: A close-up portrait of a ginger girl. Same as Close-up Portrait, but with a LoRA (Low-Rank Adaptation) to improve the quality of the eyes.
   image: static/images/img-thumbs/close-up-lora/close-up-lora.jpg
   lora: true
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Apple
-  href: /apple
+  id: apple
   description: A basket of apples.
   image: static/images/img-thumbs/apple/apple.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Supercar
-  href: /supercar
+  id: supercar
   description: A supercar.
   image: static/images/img-thumbs/supercar/supercar.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Close-up Portrait
-  href: /close-up
+  id: close-up
   description: A close-up portrait of a ginger girl.
   image: static/images/img-thumbs/close-up/close-up.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Astronaut
-  href: /astronaut
+  id: astronaut
   description: An astronaut in space
   image: static/images/img-thumbs/astronaut/astronaut.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Island
-  href: /island
+  id: island
   description: An island in the ocean
   image: static/images/img-thumbs/island/island.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Stormtrooper
-  href: /stormtrooper
+  id: stormtrooper
   description: A Stormtrooper about to shoot
   image: static/images/img-thumbs/stormtrooper/stormtrooper.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Astronaut on mars
-  href: /astronaut-mars
+  id: astronaut-mars
   description: An astronaut on mars, at sunset
   image: static/images/img-thumbs/astronaut-mars/astronaut-mars.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Norwegian cat
-  href: /cat
+  id: cat
   description: Norwegian cat
   image: static/images/img-thumbs/cat/cat.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: A Witch
-  href: /witch
+  id: witch
   description: A Witch casting a spell
   image: static/images/img-thumbs/witch/witch.jpg
   lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
