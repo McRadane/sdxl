@@ -155,6 +155,29 @@ const generateImagesData = () => {
   );
 };
 
+const generateStylesCSV = () => {
+  const styles = ["name,prompt,negative_prompt,"];
+  const categories = [];
+  matchStyle.forEach((style) => {
+    if (
+      style.category !== "No style" &&
+      (!style.lora || style.lora.length === 0)
+    ) {
+      if (!categories.includes(style.category)) {
+        categories.push(style.category);
+        styles.push(`____${style.category}____`);
+      }
+
+      styles.push(`${style.name},"${style.prompt}","${style.negativePrompt}"`);
+    }
+  });
+
+  fs.writeFileSync(
+    path.resolve(__dirname, "..", "static", "styles.csv"),
+    styles.join("\n")
+  );
+};
+
 const generatePages = () => {
   let menuSubjectPage = "";
   const dataSubject = ["id,lora,model,nsfw,sampler,cfg,steps,seed"];
@@ -412,3 +435,4 @@ const checkImages = async () => {
 checkImages();
 generateImagesData();
 generatePages();
+generateStylesCSV();
