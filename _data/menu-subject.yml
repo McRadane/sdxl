@@ -82,3 +82,9 @@
   image: static/images/img-thumbs/cat/cat.jpg
   lora: false
 
+- title: A Witch
+  href: /witch
+  description: A Witch casting a spell
+  image: static/images/img-thumbs/witch/witch.jpg
+  lora: false
+
