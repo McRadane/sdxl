@@ -1,0 +1,18 @@
+{
+  "description": "A basket of apples.",
+  "order": 7,
+  "params": {
+    "cfg": 7,
+    "model": {
+      "hash": "0F1B80CFE8",
+      "title": "DreamShaper XL1.0",
+      "url": "https://civitai.com/models/112902?modelVersionId=126688"
+    },
+    "negativePrompt": "",
+    "prompt": "a basket of apples",
+    "sampler": "DPM++ 2M SDE Karras",
+    "seed": 2961052946,
+    "steps": 20
+  },
+  "title": "Apple"
+}

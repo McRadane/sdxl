@@ -4,7 +4,28 @@ const path = require("path");
 const { execSync } = require("child_process");
 
 const matchStyleRaw = require("./match-style.json");
-const menu = require("./menu.json");
+// const menu = require("./menu.json");
+
+const constructMenu = () => {
+  const root = path.resolve(__dirname, "..", "static", "_source");
+  const menu = [];
+
+  const folders = fs.readdirSync(root);
+
+  folders.forEach((folder) => {
+    const dataPath = path.resolve(root, folder, "data.json");
+
+    if (fs.existsSync(dataPath)) {
+      const data = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+
+      menu.push({ ...data, slug: folder });
+    }
+  });
+
+  return menu;
+};
+
+const menu = constructMenu();
 
 const matchStyle = matchStyleRaw.sort((a, b) => {
   if (a["category-order"] !== b["category-order"]) {
@@ -19,8 +40,16 @@ const checkMissingStyles = (images, folder, prompts) => {
   matchStyle.forEach((style) => {
     const found = images.find((image) => image.includes(style.style));
 
-    if (!found) {
-      console.log(`Missing style ${style.style}`);
+    let doubleLora = false;
+
+    if (subject && subject.params.lora && style.lora) {
+      doubleLora = subject.params.lora.some((lora) =>
+        style.lora.some((styleLora) => styleLora.title === lora.title)
+      );
+    }
+
+    if (!found && !doubleLora) {
+      console.log(`Missing style ${style.style}`, { doubleLora });
       if (subject) {
         if (style.prompt.includes("{prompt}")) {
           prompts.push(
@@ -344,7 +373,9 @@ const checkImages = async () => {
   const folders = fs.readdirSync(sourceFolder);
 
   folders.forEach((folder) => {
-    const images = fs.readdirSync(path.resolve(sourceFolder, folder));
+    const images = fs
+      .readdirSync(path.resolve(sourceFolder, folder))
+      .filter((predicate) => predicate.endsWith(".png"));
 
     if (!fs.existsSync(path.resolve(thumbFolder, folder))) {
       fs.mkdirSync(path.resolve(thumbFolder, folder), { recursive: true });

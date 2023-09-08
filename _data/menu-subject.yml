@@ -1,10 +1,34 @@
-- title: Tattooed Women
-  id: tattooed-women
-  description: A women with tattoo and blue hair.
-  image: static/images/img-thumbs/tattooed-women/tattooed-women.jpg
+- title: Apple
+  id: apple
+  description: A basket of apples.
+  image: static/images/img-thumbs/apple/apple.jpg
   lora: false
   model: 0F1B80CFE8
-  nsfw: true
+  nsfw: false
+
+- title: Astronaut
+  id: astronaut
+  description: An astronaut in space
+  image: static/images/img-thumbs/astronaut/astronaut.jpg
+  lora: false
+  model: 0F1B80CFE8
+  nsfw: false
+
+- title: Astronaut on mars
+  id: astronaut-mars
+  description: An astronaut on mars, at sunset
+  image: static/images/img-thumbs/astronaut-mars/astronaut-mars.jpg
+  lora: false
+  model: 0F1B80CFE8
+  nsfw: false
+
+- title: Norwegian cat
+  id: cat
+  description: Norwegian cat
+  image: static/images/img-thumbs/cat/cat.jpg
+  lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: City Skyline
   id: city
@@ -14,10 +38,34 @@
   model: 0F1B80CFE8
   nsfw: false
 
+- title: Close-up Portrait
+  id: close-up
+  description: A close-up portrait of a ginger girl.
+  image: static/images/img-thumbs/close-up/close-up.jpg
+  lora: false
+  model: 0F1B80CFE8
+  nsfw: false
+
+- title: Close-up Portrait (LoRA)
+  id: close-up-lora
+  description: A close-up portrait of a ginger girl. Same as Close-up Portrait, but with a LoRA (Low-Rank Adaptation) to improve the quality of the eyes.
+  image: static/images/img-thumbs/close-up-lora/close-up-lora.jpg
+  lora: true
+  model: 0F1B80CFE8
+  nsfw: false
+
 - title: Modern House
   id: house
   description: A modern house.
   image: static/images/img-thumbs/house/house.jpg
+  lora: false
+  model: 0F1B80CFE8
+  nsfw: false
+
+- title: Island
+  id: island
+  description: An island in the ocean
+  image: static/images/img-thumbs/island/island.jpg
   lora: false
   model: 0F1B80CFE8
   nsfw: false
@@ -38,18 +86,10 @@
   model: 0F1B80CFE8
   nsfw: false
 
-- title: Close-up Portrait (LoRA)
-  id: close-up-lora
-  description: A close-up portrait of a ginger girl. Same as Close-up Portrait, but with a LoRA (Low-Rank Adaptation) to improve the quality of the eyes.
-  image: static/images/img-thumbs/close-up-lora/close-up-lora.jpg
-  lora: true
-  model: 0F1B80CFE8
-  nsfw: false
-
-- title: Apple
-  id: apple
-  description: A basket of apples.
-  image: static/images/img-thumbs/apple/apple.jpg
+- title: Stormtrooper
+  id: stormtrooper
+  description: A Stormtrooper about to shoot
+  image: static/images/img-thumbs/stormtrooper/stormtrooper.jpg
   lora: false
   model: 0F1B80CFE8
   nsfw: false
@@ -62,53 +102,13 @@
   model: 0F1B80CFE8
   nsfw: false
 
-- title: Close-up Portrait
-  id: close-up
-  description: A close-up portrait of a ginger girl.
-  image: static/images/img-thumbs/close-up/close-up.jpg
+- title: Tattooed Women
+  id: tattooed-women
+  description: A women with tattoo and blue hair.
+  image: static/images/img-thumbs/tattooed-women/tattooed-women.jpg
   lora: false
   model: 0F1B80CFE8
-  nsfw: false
-
-- title: Astronaut
-  id: astronaut
-  description: An astronaut in space
-  image: static/images/img-thumbs/astronaut/astronaut.jpg
-  lora: false
-  model: 0F1B80CFE8
-  nsfw: false
-
-- title: Island
-  id: island
-  description: An island in the ocean
-  image: static/images/img-thumbs/island/island.jpg
-  lora: false
-  model: 0F1B80CFE8
-  nsfw: false
-
-- title: Stormtrooper
-  id: stormtrooper
-  description: A Stormtrooper about to shoot
-  image: static/images/img-thumbs/stormtrooper/stormtrooper.jpg
-  lora: false
-  model: 0F1B80CFE8
-  nsfw: false
-
-- title: Astronaut on mars
-  id: astronaut-mars
-  description: An astronaut on mars, at sunset
-  image: static/images/img-thumbs/astronaut-mars/astronaut-mars.jpg
-  lora: false
-  model: 0F1B80CFE8
-  nsfw: false
-
-- title: Norwegian cat
-  id: cat
-  description: Norwegian cat
-  image: static/images/img-thumbs/cat/cat.jpg
-  lora: false
-  model: 0F1B80CFE8
-  nsfw: false
+  nsfw: true
 
 - title: A Witch
   id: witch
