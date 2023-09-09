@@ -3,11 +3,31 @@ layout: gallery
 title: Miscellaneous
 ---
 
-{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up-lora | concat: site.data.apple | concat: site.data.supercar | concat: site.data.close-up %}
+{% assign everything = site.data.apple | concat: site.data.astronaut | concat: site.data.astronaut-mars | concat: site.data.cat | concat: site.data.city | concat: site.data.close-up | concat: site.data.close-up-lora | concat: site.data.house | concat: site.data.island | concat: site.data.nude-women | concat: site.data.river | concat: site.data.stormtrooper | concat: site.data.supercar | concat: site.data.tattooed-women | concat: site.data.witch %}
+
+{% assign academia = everything | where: 'title', 'Academia' %}
+
+{% include gallery.html data = academia title = "Academia" id = 'academia' %}
+
+{% assign actionfigure = everything | where: 'title', 'Action Figure' %}
+
+{% include gallery.html data = actionfigure title = "Action Figure" id = 'actionfigure' %}
 
 {% assign architectural = everything | where: 'title', 'Architectural' %}
 
 {% include gallery.html data = architectural title = "Architectural" id = 'architectural' %}
+
+{% assign astralaura = everything | where: 'title', 'Astral Aura' %}
+
+{% include gallery.html data = astralaura title = "Astral Aura" id = 'astralaura' %}
+
+{% assign blueprint = everything | where: 'title', 'Blueprint' %}
+
+{% include gallery.html data = blueprint title = "Blueprint" id = 'blueprint' %}
+
+{% assign darkmoody = everything | where: 'title', 'Dark Moody' %}
+
+{% include gallery.html data = darkmoody title = "Dark Moody" id = 'darkmoody' %}
 
 {% assign disco = everything | where: 'title', 'Disco' %}
 
@@ -25,6 +45,10 @@ title: Miscellaneous
 
 {% include gallery.html data = fairytale title = "Fairy Tale" id = 'fairytale' %}
 
+{% assign fxmonster = everything | where: 'title', 'Fx Monster' %}
+
+{% include gallery.html data = fxmonster title = "Fx Monster" id = 'fxmonster' %}
+
 {% assign gothic = everything | where: 'title', 'Gothic' %}
 
 {% include gallery.html data = gothic title = "Gothic" id = 'gothic' %}
@@ -41,6 +65,10 @@ title: Miscellaneous
 
 {% include gallery.html data = kawaii title = "Kawaii" id = 'kawaii' %}
 
+{% assign logo = everything | where: 'title', 'Logo' %}
+
+{% include gallery.html data = logo title = "Logo" id = 'logo' %}
+
 {% assign lovecraftian = everything | where: 'title', 'Lovecraftian' %}
 
 {% include gallery.html data = lovecraftian title = "Lovecraftian" id = 'lovecraftian' %}
@@ -52,6 +80,10 @@ title: Miscellaneous
 {% assign manga = everything | where: 'title', 'Manga' %}
 
 {% include gallery.html data = manga title = "Manga" id = 'manga' %}
+
+{% assign medievalism = everything | where: 'title', 'Medievalism' %}
+
+{% include gallery.html data = medievalism title = "Medievalism" id = 'medievalism' %}
 
 {% assign metropolis = everything | where: 'title', 'Metropolis' %}
 
@@ -69,6 +101,10 @@ title: Miscellaneous
 
 {% include gallery.html data = nautical title = "Nautical" id = 'nautical' %}
 
+{% assign perfecteyes = everything | where: 'title', 'Perfect Eyes' %}
+
+{% include gallery.html data = perfecteyes title = "Perfect Eyes" id = 'perfecteyes' %}
+
 {% assign space = everything | where: 'title', 'Space' %}
 
 {% include gallery.html data = space title = "Space" id = 'space' %}
@@ -81,34 +117,6 @@ title: Miscellaneous
 
 {% include gallery.html data = techwearfashion title = "Techwear Fashion" id = 'techwearfashion' %}
 
-{% assign academia = everything | where: 'title', 'Academia' %}
-
-{% include gallery.html data = academia title = "Academia" id = 'academia' %}
-
-{% assign actionfigure = everything | where: 'title', 'Action Figure' %}
-
-{% include gallery.html data = actionfigure title = "Action Figure" id = 'actionfigure' %}
-
-{% assign astralaura = everything | where: 'title', 'Astral Aura' %}
-
-{% include gallery.html data = astralaura title = "Astral Aura" id = 'astralaura' %}
-
-{% assign blueprint = everything | where: 'title', 'Blueprint' %}
-
-{% include gallery.html data = blueprint title = "Blueprint" id = 'blueprint' %}
-
-{% assign darkmoody = everything | where: 'title', 'Dark Moody' %}
-
-{% include gallery.html data = darkmoody title = "Dark Moody" id = 'darkmoody' %}
-
-{% assign logo = everything | where: 'title', 'Logo' %}
-
-{% include gallery.html data = logo title = "Logo" id = 'logo' %}
-
-{% assign medievalism = everything | where: 'title', 'Medievalism' %}
-
-{% include gallery.html data = medievalism title = "Medievalism" id = 'medievalism' %}
-
 {% assign terragen = everything | where: 'title', 'Terragen' %}
 
 {% include gallery.html data = terragen title = "Terragen" id = 'terragen' %}
@@ -116,6 +124,10 @@ title: Miscellaneous
 {% assign tribal = everything | where: 'title', 'Tribal' %}
 
 {% include gallery.html data = tribal title = "Tribal" id = 'tribal' %}
+
+{% assign wowifier = everything | where: 'title', 'WOW-ifier' %}
+
+{% include gallery.html data = wowifier title = "WOW-ifier" id = 'wowifier' %}
 
 {% assign zentangle = everything | where: 'title', 'Zentangle' %}
 

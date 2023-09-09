@@ -1,0 +1,12 @@
+---
+layout: gallery
+title: Norwegian cat
+description: Norwegian cat
+---
+
+{% assign data = site.data.cat %}
+
+{% include galleries.html 
+    data = data 
+    gallery = "cat"
+%}

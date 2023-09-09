@@ -3,7 +3,7 @@ layout: gallery
 title: Futuristic
 ---
 
-{% assign everything = site.data.tattooed-women | concat: site.data.city | concat: site.data.house | concat: site.data.nude-women | concat: site.data.river | concat: site.data.close-up-lora | concat: site.data.apple | concat: site.data.supercar | concat: site.data.close-up %}
+{% assign everything = site.data.apple | concat: site.data.astronaut | concat: site.data.astronaut-mars | concat: site.data.cat | concat: site.data.city | concat: site.data.close-up | concat: site.data.close-up-lora | concat: site.data.house | concat: site.data.island | concat: site.data.nude-women | concat: site.data.river | concat: site.data.stormtrooper | concat: site.data.supercar | concat: site.data.tattooed-women | concat: site.data.witch %}
 
 {% assign biomechanical = everything | where: 'title', 'Biomechanical' %}
 
@@ -29,6 +29,14 @@ title: Futuristic
 
 {% include gallery.html data = futuristic title = "Futuristic" id = 'futuristic' %}
 
+{% assign glitchcore = everything | where: 'title', 'Glitchcore' %}
+
+{% include gallery.html data = glitchcore title = "Glitchcore" id = 'glitchcore' %}
+
+{% assign glofi = everything | where: 'title', 'Glo-fi' %}
+
+{% include gallery.html data = glofi title = "Glo-fi" id = 'glofi' %}
+
 {% assign retrocyberpunk = everything | where: 'title', 'Retro Cyberpunk' %}
 
 {% include gallery.html data = retrocyberpunk title = "Retro Cyberpunk" id = 'retrocyberpunk' %}
@@ -44,11 +52,3 @@ title: Futuristic
 {% assign vaporwave = everything | where: 'title', 'Vaporwave' %}
 
 {% include gallery.html data = vaporwave title = "Vaporwave" id = 'vaporwave' %}
-
-{% assign glitchcore = everything | where: 'title', 'Glitchcore' %}
-
-{% include gallery.html data = glitchcore title = "Glitchcore" id = 'glitchcore' %}
-
-{% assign glofi = everything | where: 'title', 'Glo-fi' %}
-
-{% include gallery.html data = glofi title = "Glo-fi" id = 'glofi' %}

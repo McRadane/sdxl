@@ -12,23 +12,50 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link
-      href="{{ site.baseurl }}/static/style.css"
-      rel="stylesheet"
-    />
+    <link href="{{ site.baseurl }}/static/style.css" rel="stylesheet" />
   </head>
+
   <body>
-    <main class="container">
-      {{ content }}     
-    </main>
+    <main class="container">{{ content }}</main>
     <footer>
       <div class="container-fluid">
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="displayLora">
-          <label class="form-check-label" for="displayLora">Display LoRA</label>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-auto-close="outside"
+          >
+            Filters
+          </button>
+          <form class="dropdown-menu p-4">
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="displayLora"
+              />
+              <label class="form-check-label" for="displayLora"
+                >Display LoRA</label
+              >
+            </div>
+            <select
+              id="displayNSFW"
+              class="form-select"
+              aria-label="Display NSFW"
+            >
+              <option value="show">Show</option>
+              <option value="blur">Blur</option>
+              <option value="hide">Hide</option>
+            </select>
+          </form>
         </div>
-    
-        <a href="{{ site.baseurl }}/static/styles.csv" download>Download CSV styles</a>
+
+        <a href="{{ site.baseurl }}/static/styles.csv" download
+          >Download CSV styles</a
+        >
       </div>
     </footer>
     <script

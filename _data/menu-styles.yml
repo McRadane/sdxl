@@ -1,45 +1,54 @@
+- title: LoRA
+  href: /styles-lora
+  image: static/images/img-thumbs/lora.jpg
+  lora: true
+  nsfw: false
+
 - title: Base
   href: /styles-base
   image: static/images/img-thumbs/base.jpg
   lora: false
+  nsfw: false
 
 - title: Ads
   href: /styles-ads
   image: static/images/img-thumbs/ads.jpg
   lora: false
+  nsfw: false
 
 - title: Artstyle
   href: /styles-artstyle
   image: static/images/img-thumbs/artstyle.jpg
   lora: false
+  nsfw: false
 
 - title: Futuristic
   href: /styles-futuristic
   image: static/images/img-thumbs/futuristic.jpg
   lora: false
+  nsfw: false
 
 - title: Game
   href: /styles-game
   image: static/images/img-thumbs/game.jpg
   lora: false
-
-- title: Miscellaneous
-  href: /styles-miscellaneous
-  image: static/images/img-thumbs/miscellaneous.jpg
-  lora: false
+  nsfw: false
 
 - title: Papercraft
   href: /styles-papercraft
   image: static/images/img-thumbs/papercraft.jpg
   lora: false
+  nsfw: false
 
 - title: Photo
   href: /styles-photo
   image: static/images/img-thumbs/photo.jpg
   lora: false
+  nsfw: false
 
-- title: LoRA
-  href: /styles-lora
-  image: static/images/img-thumbs/lora.jpg
-  lora: true
+- title: Miscellaneous
+  href: /styles-miscellaneous
+  image: static/images/img-thumbs/miscellaneous.jpg
+  lora: false
+  nsfw: false
 
