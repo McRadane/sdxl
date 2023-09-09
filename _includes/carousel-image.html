@@ -1,16 +1,17 @@
+{% assign prompt-data = site.data.data-subject | where: 'id', include.picture.id %}
 <div
   class="carousel-item {% if include.active %}active{% endif %}"
   data-title="{{ include.title }}"
   data-style="{{ include.style }}"
   data-subject="{{ include.subject }}"
-  data-model="{{ include.picture.model }}"
+  data-model="{{ prompt-data.first.model }}"
   data-lora="{{ include.picture.lora }}"
   data-prompt="{{ include.picture.prompt }}"
   data-negative-prompt="{{ include.picture.negativePrompt }}"
-  data-sampler="{{ include.picture.sampler }}"
-  data-cfg="{{ include.picture.cfg }}"
-  data-steps="{{ include.picture.steps }}"
-  data-seed="{{ include.picture.seed }}"
+  data-sampler="{{ prompt-data.first.sampler }}"
+  data-cfg="{{ prompt-data.first.cfg }}"
+  data-steps="{{ prompt-data.first.steps }}"
+  data-seed="{{ prompt-data.first.seed }}"
 >
   <img
     src="{{ include.image }}"

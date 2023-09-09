@@ -25,12 +25,13 @@
 }
 
 .flex {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   justify-content: space-between;
 
   @media (max-width: 1000px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
@@ -43,6 +44,7 @@
 .vh-90 {
   max-height: 90vh;
   max-width: 100%;
+  margin: auto;
 }
 
 .generation-parameters {
@@ -58,17 +60,17 @@
   background-color: black;
 }
 
-.lora,
+.category-lora,
 .share-button {
   display: none;
 }
 
 .nsfw img {
   filter: blur(10px);
-  clip-path: fill-box;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.display-lora .lora {
+.display-lora .category-lora {
   display: initial !important;
 }
 

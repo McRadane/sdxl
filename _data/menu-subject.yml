@@ -1,5 +1,5 @@
 - title: Apple
-  id: apple
+  href: /apple
   description: A basket of apples.
   image: static/images/img-thumbs/apple/apple.jpg
   lora: false
@@ -7,7 +7,7 @@
   nsfw: false
 
 - title: Astronaut
-  id: astronaut
+  href: /astronaut
   description: An astronaut in space
   image: static/images/img-thumbs/astronaut/astronaut.jpg
   lora: false
@@ -15,7 +15,7 @@
   nsfw: false
 
 - title: Astronaut on mars
-  id: astronaut-mars
+  href: /astronaut-mars
   description: An astronaut on mars, at sunset
   image: static/images/img-thumbs/astronaut-mars/astronaut-mars.jpg
   lora: false
@@ -23,7 +23,7 @@
   nsfw: false
 
 - title: Norwegian cat
-  id: cat
+  href: /cat
   description: Norwegian cat
   image: static/images/img-thumbs/cat/cat.jpg
   lora: false
@@ -31,7 +31,7 @@
   nsfw: false
 
 - title: City Skyline
-  id: city
+  href: /city
   description: A city skyline at sunset.
   image: static/images/img-thumbs/city/city.jpg
   lora: false
@@ -39,7 +39,7 @@
   nsfw: false
 
 - title: Close-up Portrait
-  id: close-up
+  href: /close-up
   description: A close-up portrait of a ginger girl.
   image: static/images/img-thumbs/close-up/close-up.jpg
   lora: false
@@ -47,7 +47,7 @@
   nsfw: false
 
 - title: Close-up Portrait (LoRA)
-  id: close-up-lora
+  href: /close-up-lora
   description: A close-up portrait of a ginger girl. Same as Close-up Portrait, but with a LoRA (Low-Rank Adaptation) to improve the quality of the eyes.
   image: static/images/img-thumbs/close-up-lora/close-up-lora.jpg
   lora: true
@@ -55,7 +55,7 @@
   nsfw: false
 
 - title: Modern House
-  id: house
+  href: /house
   description: A modern house.
   image: static/images/img-thumbs/house/house.jpg
   lora: false
@@ -63,7 +63,7 @@
   nsfw: false
 
 - title: Island
-  id: island
+  href: /island
   description: An island in the ocean
   image: static/images/img-thumbs/island/island.jpg
   lora: false
@@ -71,7 +71,7 @@
   nsfw: false
 
 - title: Nude Women
-  id: nude-women
+  href: /nude-women
   description: A nude women in darkness.
   image: static/images/img-thumbs/nude-women/nude-women.jpg
   lora: false
@@ -79,7 +79,7 @@
   nsfw: true
 
 - title: Forest River
-  id: river
+  href: /river
   description: A river in a forest.
   image: static/images/img-thumbs/river/river.jpg
   lora: false
@@ -87,7 +87,7 @@
   nsfw: false
 
 - title: Stormtrooper
-  id: stormtrooper
+  href: /stormtrooper
   description: A Stormtrooper about to shoot
   image: static/images/img-thumbs/stormtrooper/stormtrooper.jpg
   lora: false
@@ -95,7 +95,7 @@
   nsfw: false
 
 - title: Supercar
-  id: supercar
+  href: /supercar
   description: A supercar.
   image: static/images/img-thumbs/supercar/supercar.jpg
   lora: false
@@ -103,7 +103,7 @@
   nsfw: false
 
 - title: Tattooed Women
-  id: tattooed-women
+  href: /tattooed-women
   description: A women with tattoo and blue hair.
   image: static/images/img-thumbs/tattooed-women/tattooed-women.jpg
   lora: false
@@ -111,7 +111,7 @@
   nsfw: true
 
 - title: A Witch
-  id: witch
+  href: /witch
   description: A Witch casting a spell
   image: static/images/img-thumbs/witch/witch.jpg
   lora: false

@@ -1,5 +1,5 @@
 {%if include.lora == "true" %}
-<div class="lora">
+<div class="category-lora">
 {% else %}
 <div>
 {% endif %}
@@ -9,7 +9,7 @@
 
 <div class="row">
   {% for picture in pictures %} 
-    {% capture image %}{{ site.baseurl }}/static/images/img-thumbs/{{picture.filename}}{% endcapture %} 
+    {% capture image %}{{ site.baseurl }}/static/images/img-thumbs/{{picture.id}}/{{picture.filename}}{% endcapture %} 
     {% if include.title-field == "title" %}
       {% include thumb.html image=image category = include.id title=picture.title image-index = forloop.index0 %} 
     {% else %}

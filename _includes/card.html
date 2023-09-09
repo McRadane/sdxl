@@ -1,4 +1,4 @@
-{% capture colClass %}col-sm-3 mb-1 mb-sm-0 {% if include.lora %} lora {%
+{% capture colClass %}col-sm-3 mb-1 mb-sm-0 {% if include.lora %} category-lora {%
 endif%} {% if include.nsfw %} nsfw {% endif%} {% endcapture %} {% assign model =
 site.data.data-models | where: 'hash', include.model %}
 
@@ -10,15 +10,22 @@ site.data.data-models | where: 'hash', include.model %}
         <div class="ribbon">{{ model.first.title }}</div>
       </div>
       {% endif %}
-      <img src="{{ include.image }}" class="card-img-top" alt="{{ include.title }}" data-bs-toggle="modal"
-        loading="lazy" />
+      <img
+        src="{{ include.image }}"
+        class="card-img-top"
+        alt="{{ include.title }}"
+        data-bs-toggle="modal"
+        loading="lazy"
+      />
     </a>
     <div class="card-body">
       <h5 class="card-title">{{ include.title }}</h5>
       <h6 class="card-subtitle mb-2 text-body-secondary">
         {{ include.description }}
       </h6>
-      <a href="{{ site.baseurl }}{{ include.href }}" class="card-link">See galleries</a>
+      <a href="{{ site.baseurl }}{{ include.href }}" class="card-link"
+        >See galleries</a
+      >
     </div>
   </div>
 </div>

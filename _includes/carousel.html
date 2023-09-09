@@ -12,11 +12,11 @@
             <div class="carousel-inner">
               {% for picture in include.data %}
                 {% assign active = forloop.first %}
-                {% capture image %}{{ site.baseurl }}/static/images/img-normal/{{picture.filename}}{% endcapture %}
+                {% capture image %}{{ site.baseurl }}/static/images/img-normal/{{picture.id}}/{{picture.filename}}{% endcapture %}
                 {% if include.title-field == "title" %}
                   {% include carousel-image.html 
                     image=image 
-                    title=picture.title
+                    title=picture.title 
                     style=picture.title
                     subject=picture.subject
                     active = active 
@@ -61,6 +61,8 @@
           </div>
           <div class="generation-parameters">
             <h3>Generation parameters</h3>
+            {% assign prompt-data = site.data.data-subject | where: 'id', include.data.first.id %}
+
             {% if include.title-field == "title" %}
               <h4>{{ include.data.first.title }}</h4>
             {% else %}
@@ -69,7 +71,7 @@
             <dl>
               <dt>Model</dt>
               <dd class="technical model">
-                {% assign model = site.data.data-models | where: 'hash', include.data.first.model %}
+                {% assign model = site.data.data-models | where: 'hash', prompt-data.first.model %}
                 <a href="{{ model.first.url }}" target="_blank">{{ model.first.title }}</a>
               </dd>
               <dt>Style</dt>
@@ -79,23 +81,23 @@
               <dt>Prompt</dt>
               <dd class="technical prompt">{{ include.data.first.prompt }}</dd>
               <dt>Negative prompt</dt>
-              <dd class="technical negative-prompt">{{ include.data.first.negativePrompt }}</dd>
+              <dd class="technical negative-prompt">{{ include.data.first.negativePrompt }}&nbsp;</dd>
               <dt>LoRA</dt>
               <dd class="technical lora">
                 {% assign loras = include.data.first.lora | split: "," %}
                 {% for loratitle in loras %}
                   {% assign foundlora = site.data.data-loras | where: 'title', loratitle %}
                   <a href="{{ foundlora.first.url }}" target="_blank">{{ foundlora.first.title }}</a>
-                {% endfor %}
+                {% endfor %}&nbsp;
               </dd>
               <dt>Sampler</dt>
-              <dd class="technical sampler">{{ include.data.first.sampler }}</dd>
+              <dd class="technical sampler">{{ prompt-data.first.sampler }}</dd>
               <dt>CFG</dt>
-              <dd class="technical cfg">{{ include.data.first.cfg }}</dd>
+              <dd class="technical cfg">{{ prompt-data.first.cfg }}</dd>
               <dt>Steps</dt>
-              <dd class="technical steps">{{ include.data.first.steps }}</dd>
+              <dd class="technical steps">{{ prompt-data.first.steps }}</dd>
               <dt>Seed</dt>
-              <dd class="technical seed">{{ include.data.first.seed }}</dd>
+              <dd class="technical seed">{{ prompt-data.first.seed }}</dd>
             </dl>
             <button type="button" class="btn btn-outline-secondary share-button">Share</button>
           </div>

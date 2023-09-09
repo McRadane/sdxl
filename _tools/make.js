@@ -49,7 +49,7 @@ const checkMissingStyles = (images, folder, prompts) => {
     }
 
     if (!found && !doubleLora) {
-      console.log(`Missing style ${style.style}`, { doubleLora });
+      console.log(`Missing style ${style.style}`);
       if (subject) {
         if (style.prompt.includes("{prompt}")) {
           prompts.push(
@@ -83,9 +83,7 @@ const generateImagesData = () => {
       item.slug
     );
     const files = fs.readdirSync(dir);
-    const images = [
-      "title,filename,category,subject,prompt,negativePrompt,lora",
-    ];
+    const images = ["title,filename,category,subject,id,prompt,negativePrompt,lora"];
 
     files.forEach((file) => {
       let match = /[0-9]+-(.*)\.jpg/i.exec(file);
@@ -93,7 +91,7 @@ const generateImagesData = () => {
       if (!match) {
         if (file.includes(item.slug)) {
           match = [file, "None"];
-        }
+        } 
       }
 
       if (match) {
@@ -120,9 +118,9 @@ const generateImagesData = () => {
             .map((item) => item.trim())
             .join(", ");
           images.push(
-            `${style.name},${item.slug}/${file},${style.category},${
-              item.title
-            },"${promptClean}","${negativePromptClean}","${lora
+            `${style.name},${file},${style.category},${item.title},${
+              item.slug
+            },"${promptClean}","${negativePromptClean}",,"${lora
               .map((lora) => lora.title)
               .join(",")}"`
           );
@@ -142,7 +140,6 @@ const generateImagesData = () => {
       `${style.category},${style["category-slug"]},${style["category-order"]},false`
     );
   });
-  categoryData.push(`LoRA,lora,100,true`);
 
   const lorasDataCSV = [
     "title,url",
@@ -214,7 +211,7 @@ const generatePages = () => {
   menu.forEach((item) => {
     const lora = item.params.lora ?? [];
     menuSubjectPage += `- title: ${item.title}
-  id: ${item.slug}
+  href: /${item.slug}
   description: ${item.description}
   image: static/images/img-thumbs/${item.slug}/${item.slug}.jpg
   lora: ${lora.length !== 0 ?? false}
@@ -336,7 +333,7 @@ title: ${categoryTitle}
 
     if (category !== "Stability's AI") {
       menuStylePage += `- title: ${categoryTitle}
-  id: styles-${categorySlug}
+  href: /styles-${categorySlug}
   image: static/images/img-thumbs/${categorySlug}.jpg
   lora: ${category === "LoRA"}
   nsfw: false
