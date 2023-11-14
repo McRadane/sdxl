@@ -54,6 +54,22 @@
   model: 0F1B80CFE8
   nsfw: false
 
+- title: Anubis
+  href: /egypt
+  description: undefined
+  image: static/images/img-thumbs/egypt/egypt.jpg
+  lora: false
+  model: 0F1B80CFE8
+  nsfw: false
+
+- title: Fallout Wasteland
+  href: /fallout
+  description: undefined
+  image: static/images/img-thumbs/fallout/fallout.jpg
+  lora: false
+  model: 0F1B80CFE8
+  nsfw: false
+
 - title: Modern House
   href: /house
   description: A modern house.
@@ -77,6 +93,14 @@
   lora: false
   model: 0F1B80CFE8
   nsfw: true
+
+- title: Éclair
+  href: /pastry
+  description: A caramel Éclair.
+  image: static/images/img-thumbs/pastry/pastry.jpg
+  lora: false
+  model: 0F1B80CFE8
+  nsfw: false
 
 - title: Forest River
   href: /river
@@ -106,6 +130,22 @@
   href: /tattooed-women
   description: A women with tattoo and blue hair.
   image: static/images/img-thumbs/tattooed-women/tattooed-women.jpg
+  lora: false
+  model: 0F1B80CFE8
+  nsfw: true
+
+- title: Viking Warrior
+  href: /vikings
+  description: undefined
+  image: static/images/img-thumbs/vikings/vikings.jpg
+  lora: false
+  model: 0F1B80CFE8
+  nsfw: false
+
+- title: Vines
+  href: /vines
+  description: A women with vines wrapped around her chest.
+  image: static/images/img-thumbs/vines/vines.jpg
   lora: false
   model: 0F1B80CFE8
   nsfw: true

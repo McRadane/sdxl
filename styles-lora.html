@@ -3,7 +3,7 @@ layout: gallery
 title: LoRA
 ---
 
-{% assign everything = site.data.apple | concat: site.data.astronaut | concat: site.data.astronaut-mars | concat: site.data.cat | concat: site.data.city | concat: site.data.close-up | concat: site.data.close-up-lora | concat: site.data.house | concat: site.data.island | concat: site.data.nude-women | concat: site.data.river | concat: site.data.stormtrooper | concat: site.data.supercar | concat: site.data.tattooed-women | concat: site.data.witch %}
+{% assign everything = site.data.apple | concat: site.data.astronaut | concat: site.data.astronaut-mars | concat: site.data.cat | concat: site.data.city | concat: site.data.close-up | concat: site.data.close-up-lora | concat: site.data.egypt | concat: site.data.fallout | concat: site.data.house | concat: site.data.island | concat: site.data.nude-women | concat: site.data.pastry | concat: site.data.river | concat: site.data.stormtrooper | concat: site.data.supercar | concat: site.data.tattooed-women | concat: site.data.vikings | concat: site.data.vines | concat: site.data.witch %}
 
 {% assign leastdetails = everything | where: 'title', 'Least Details' %}
 
@@ -45,9 +45,29 @@ title: LoRA
 
 {% include gallery.html data = moebius title = "Moebius" id = 'moebius' %}
 
+{% assign monochromesurrealism = everything | where: 'title', 'Monochrome Surrealism' %}
+
+{% include gallery.html data = monochromesurrealism title = "Monochrome Surrealism" id = 'monochromesurrealism' %}
+
+{% assign pablopicasso = everything | where: 'title', 'Pablo Picasso' %}
+
+{% include gallery.html data = pablopicasso title = "Pablo Picasso" id = 'pablopicasso' %}
+
+{% assign psychedelicnoir = everything | where: 'title', 'Psychedelic Noir' %}
+
+{% include gallery.html data = psychedelicnoir title = "Psychedelic Noir" id = 'psychedelicnoir' %}
+
+{% assign sovietposter = everything | where: 'title', 'Soviet Poster' %}
+
+{% include gallery.html data = sovietposter title = "Soviet Poster" id = 'sovietposter' %}
+
 {% assign terriblefanart = everything | where: 'title', 'Terrible FanArt' %}
 
 {% include gallery.html data = terriblefanart title = "Terrible FanArt" id = 'terriblefanart' %}
+
+{% assign vangogh = everything | where: 'title', 'Van Gogh' %}
+
+{% include gallery.html data = vangogh title = "Van Gogh" id = 'vangogh' %}
 
 {% assign ps = everything | where: 'title', 'PS1' %}
 
@@ -73,9 +93,17 @@ title: LoRA
 
 {% include gallery.html data = filmstilljuggerxl title = "Film Still (Jugger XL)" id = 'filmstilljuggerxl' %}
 
+{% assign flash = everything | where: 'title', 'Flash' %}
+
+{% include gallery.html data = flash title = "Flash" id = 'flash' %}
+
 {% assign moviestilljuggerxl = everything | where: 'title', 'Movie Still (Jugger XL)' %}
 
 {% include gallery.html data = moviestilljuggerxl title = "Movie Still (Jugger XL)" id = 'moviestilljuggerxl' %}
+
+{% assign photoprism = everything | where: 'title', 'Photo Prism' %}
+
+{% include gallery.html data = photoprism title = "Photo Prism" id = 'photoprism' %}
 
 {% assign whitebackground = everything | where: 'title', 'White Background' %}
 
@@ -84,6 +112,26 @@ title: LoRA
 {% assign fxmonster = everything | where: 'title', 'Fx Monster' %}
 
 {% include gallery.html data = fxmonster title = "Fx Monster" id = 'fxmonster' %}
+
+{% assign fxmonstermeatsack = everything | where: 'title', 'Fx Monster (Meatsack)' %}
+
+{% include gallery.html data = fxmonstermeatsack title = "Fx Monster (Meatsack)" id = 'fxmonstermeatsack' %}
+
+{% assign legobrickheadz = everything | where: 'title', 'LEGO BrickHeadz' %}
+
+{% include gallery.html data = legobrickheadz title = "LEGO BrickHeadz" id = 'legobrickheadz' %}
+
+{% assign legocreator = everything | where: 'title', 'LEGO Creator' %}
+
+{% include gallery.html data = legocreator title = "LEGO Creator" id = 'legocreator' %}
+
+{% assign legominifig = everything | where: 'title', 'LEGO MiniFig' %}
+
+{% include gallery.html data = legominifig title = "LEGO MiniFig" id = 'legominifig' %}
+
+{% assign neonsign = everything | where: 'title', 'Neon Sign' %}
+
+{% include gallery.html data = neonsign title = "Neon Sign" id = 'neonsign' %}
 
 {% assign perfecteyes = everything | where: 'title', 'Perfect Eyes' %}
 

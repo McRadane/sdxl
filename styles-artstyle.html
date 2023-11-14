@@ -3,7 +3,7 @@ layout: gallery
 title: Artstyle
 ---
 
-{% assign everything = site.data.apple | concat: site.data.astronaut | concat: site.data.astronaut-mars | concat: site.data.cat | concat: site.data.city | concat: site.data.close-up | concat: site.data.close-up-lora | concat: site.data.house | concat: site.data.island | concat: site.data.nude-women | concat: site.data.river | concat: site.data.stormtrooper | concat: site.data.supercar | concat: site.data.tattooed-women | concat: site.data.witch %}
+{% assign everything = site.data.apple | concat: site.data.astronaut | concat: site.data.astronaut-mars | concat: site.data.cat | concat: site.data.city | concat: site.data.close-up | concat: site.data.close-up-lora | concat: site.data.egypt | concat: site.data.fallout | concat: site.data.house | concat: site.data.island | concat: site.data.nude-women | concat: site.data.pastry | concat: site.data.river | concat: site.data.stormtrooper | concat: site.data.supercar | concat: site.data.tattooed-women | concat: site.data.vikings | concat: site.data.vines | concat: site.data.witch %}
 
 {% assign abstract = everything | where: 'title', 'Abstract' %}
 
@@ -117,6 +117,14 @@ title: Artstyle
 
 {% include gallery.html data = moebius title = "Moebius" id = 'moebius' %}
 
+{% assign monochromesurrealism = everything | where: 'title', 'Monochrome Surrealism' %}
+
+{% include gallery.html data = monochromesurrealism title = "Monochrome Surrealism" id = 'monochromesurrealism' %}
+
+{% assign pablopicasso = everything | where: 'title', 'Pablo Picasso' %}
+
+{% include gallery.html data = pablopicasso title = "Pablo Picasso" id = 'pablopicasso' %}
+
 {% assign pointillism = everything | where: 'title', 'Pointillism' %}
 
 {% include gallery.html data = pointillism title = "Pointillism" id = 'pointillism' %}
@@ -129,9 +137,17 @@ title: Artstyle
 
 {% include gallery.html data = psychedelic title = "Psychedelic" id = 'psychedelic' %}
 
+{% assign psychedelicnoir = everything | where: 'title', 'Psychedelic Noir' %}
+
+{% include gallery.html data = psychedelicnoir title = "Psychedelic Noir" id = 'psychedelicnoir' %}
+
 {% assign renaissance = everything | where: 'title', 'Renaissance' %}
 
 {% include gallery.html data = renaissance title = "Renaissance" id = 'renaissance' %}
+
+{% assign sovietposter = everything | where: 'title', 'Soviet Poster' %}
+
+{% include gallery.html data = sovietposter title = "Soviet Poster" id = 'sovietposter' %}
 
 {% assign steampunk = everything | where: 'title', 'Steampunk' %}
 
@@ -148,6 +164,10 @@ title: Artstyle
 {% assign typography = everything | where: 'title', 'Typography' %}
 
 {% include gallery.html data = typography title = "Typography" id = 'typography' %}
+
+{% assign vangogh = everything | where: 'title', 'Van Gogh' %}
+
+{% include gallery.html data = vangogh title = "Van Gogh" id = 'vangogh' %}
 
 {% assign watercolor = everything | where: 'title', 'Watercolor' %}
 

@@ -569,13 +569,13 @@
     "category-slug": "artstyle",
     "lora": [
       {
-        "title": "Moebius SDXL (Jean Giraud)",
-        "url": "https://civitai.com/models/123274"
+        "title": "Moebius (Jean Giraud) Style",
+        "url": "https://civitai.com/models/74776?modelVersionId=154071"
       }
     ],
     "name": "Moebius",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:moebius-xl:0.8> moebzxl, moebius, Jean Giraud",
+    "prompt": "<lora:moebius-xl:1> Moebius (Jean Giraud) Style page, {prompt}",
     "style": "Moebius"
   },
   {
@@ -620,7 +620,7 @@
     ],
     "name": "John Berkey",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:John Berkey Style:1> John Berkey Style page",
+    "prompt": "{prompt}, <lora:john-berkey:1> John Berkey Style page",
     "style": "John Berkey"
   },
   {
@@ -635,7 +635,7 @@
     ],
     "name": "Folk Art",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:Folk Art:1> Folk Art page",
+    "prompt": "{prompt}, <lora:folk-art:1> Folk Art page",
     "style": "Folk Art"
   },
   {
@@ -650,7 +650,7 @@
     ],
     "name": "Terrible FanArt",
     "negativePrompt": "",
-    "prompt": "<lora:PE_TerribleFanArtV1:0.8> PETerribleFanArt, badly drawn, terrible drawing, ugly,creepy, {prompt}",
+    "prompt": "<lora:terrible-fanart:0.8> PETerribleFanArt, badly drawn, terrible drawing, ugly,creepy, {prompt}",
     "style": "Terrible FanArt"
   },
   {
@@ -665,8 +665,83 @@
     ],
     "name": "Dali",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:d4lixl:1> d4lixl",
+    "prompt": "{prompt}, <lora:dali:1> d4lixl",
     "style": "Dali"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Pablo Picasso ∞ SD XL 1.0",
+        "url": "https://civitai.com/models/162136?modelVersionId=182554"
+      }
+    ],
+    "name": "Pablo Picasso",
+    "negativePrompt": "",
+    "prompt": "<lora:picasso:1> p1c4ss0, a abstract painting of {prompt}, by pablo picasso, Cubism",
+    "style": "Pablo Picasso"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "VanGoghBrushwork SD XL 1.0",
+        "url": "https://civitai.com/models/157780"
+      }
+    ],
+    "name": "Van Gogh",
+    "negativePrompt": "",
+    "prompt": "v0ng44g, p14nt1ng, a painting of {prompt}, by van Gogh <lora:vangogh:1>",
+    "style": "Van Gogh"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Psychedelic Noir",
+        "url": "https://civitai.com/models/120638?modelVersionId=140194"
+      }
+    ],
+    "name": "Psychedelic Noir",
+    "negativePrompt": "",
+    "prompt": "<lora:Psychedelic_Noir__sdxl:1> {prompt}",
+    "style": "Psychedelic Noir"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Jorg Karg (Monochrome Surrealism) [SDXL]",
+        "url": "https://civitai.com/models/186689?modelVersionId=209618"
+      }
+    ],
+    "name": "Monochrome Surrealism",
+    "negativePrompt": "",
+    "prompt": "<lora:Jorg_Karg_Monochrome_Surrealism_SDXL:1> jorg karg, {prompt}",
+    "style": "Monochrome Surrealism"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Soviet poster XL",
+        "url": "https://civitai.com/models/183892?modelVersionId=206390"
+      }
+    ],
+    "name": "Soviet Poster",
+    "negativePrompt": "",
+    "prompt": "<lora:Soviet-poster:1> soviet poster, {prompt}",
+    "style": "Soviet Poster"
   },
   {
     "category": "Futuristic",
@@ -1229,6 +1304,21 @@
     "category-slug": "misc",
     "lora": [
       {
+        "title": "Fx-Monsters Meatsack",
+        "url": "https://civitai.com/models/86377?modelVersionId=198931"
+      }
+    ],
+    "name": "Fx Monster (Meatsack)",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:fx-monsters-xl-meatsack:0.7> fx-monsters-xl-meatsack, creature, monster",
+    "style": "Fx Monster (Meatsack)"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
         "title": "Perfect Eyes XL",
         "url": "https://civitai.com/models/118427"
       }
@@ -1237,6 +1327,66 @@
     "negativePrompt": "",
     "prompt": "{prompt}, <lora:perfect-eyes-xl:1> perfecteyes",
     "style": "Perfect Eyes"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "LeLo - LEGO LoRA for XL & SD1.5",
+        "url": "https://civitai.com/models/92444?modelVersionId=157536"
+      }
+    ],
+    "name": "LEGO MiniFig",
+    "negativePrompt": "",
+    "prompt": "LEGO MiniFig, {prompt}, <lora:lego-xl:0.8>",
+    "style": "LEGO MiniFig"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "LeLo - LEGO LoRA for XL & SD1.5",
+        "url": "https://civitai.com/models/92444?modelVersionId=157536"
+      }
+    ],
+    "name": "LEGO BrickHeadz",
+    "negativePrompt": "",
+    "prompt": "LEGO BrickHeadz, {prompt}, <lora:lego-xl:0.8>",
+    "style": "LEGO BrickHeadz"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "LeLo - LEGO LoRA for XL & SD1.5",
+        "url": "https://civitai.com/models/92444?modelVersionId=157536"
+      }
+    ],
+    "name": "LEGO Creator",
+    "negativePrompt": "",
+    "prompt": "LEGO Creator, {prompt}, <lora:lego-xl:0.8>",
+    "style": "LEGO Creator"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "PE Neon Sign [Style]",
+        "url": "https://civitai.com/models/137160"
+      }
+    ],
+    "name": "Neon Sign",
+    "negativePrompt": "",
+    "prompt": "<lora:PE_NeonSignStyle:0.9> PENeonSign, neon Sign, glowing, colorful, {prompt}",
+    "style": "Neon Sign"
   },
   {
     "category": "Papercraft",
@@ -1422,6 +1572,15 @@
     "category": "Photo",
     "category-order": 7,
     "category-slug": "photo",
+    "name": "Fisheye",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "(Fisheye-shot photograph:1.3) of {prompt}",
+    "style": "Fisheye"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
     "lora": [
       {
         "title": "White Background",
@@ -1507,5 +1666,35 @@
     "negativePrompt": "",
     "prompt": "{prompt}, <lora:jugger-xl:1> Cinematic Shot",
     "style": "Jugger XL (Cinematic Shot)"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "lora": [
+      {
+        "title": "F0T0PR1ZM XL",
+        "url": "https://civitai.com/models/170036?modelVersionId=191086"
+      }
+    ],
+    "name": "Photo Prism",
+    "negativePrompt": "",
+    "prompt": "<lora:F8HAUSPRISM:1> lomo artistic starburst filter grainy film photograph portrait of {prompt}, colorful lights, psychedelic, a hologram, holography, monotones, blown out",
+    "style": "Photo Prism"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "lora": [
+      {
+        "title": "Flash Photo SDXL",
+        "url": "https://civitai.com/models/131849?modelVersionId=203379"
+      }
+    ],
+    "name": "Flash",
+    "negativePrompt": "",
+    "prompt": "<lora:sdxl_darkflash_v6:0.8> very dark focused flash photo, {prompt}",
+    "style": "Flash"
   }
 ]

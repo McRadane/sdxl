@@ -3,7 +3,7 @@ layout: gallery
 title: Miscellaneous
 ---
 
-{% assign everything = site.data.apple | concat: site.data.astronaut | concat: site.data.astronaut-mars | concat: site.data.cat | concat: site.data.city | concat: site.data.close-up | concat: site.data.close-up-lora | concat: site.data.house | concat: site.data.island | concat: site.data.nude-women | concat: site.data.river | concat: site.data.stormtrooper | concat: site.data.supercar | concat: site.data.tattooed-women | concat: site.data.witch %}
+{% assign everything = site.data.apple | concat: site.data.astronaut | concat: site.data.astronaut-mars | concat: site.data.cat | concat: site.data.city | concat: site.data.close-up | concat: site.data.close-up-lora | concat: site.data.egypt | concat: site.data.fallout | concat: site.data.house | concat: site.data.island | concat: site.data.nude-women | concat: site.data.pastry | concat: site.data.river | concat: site.data.stormtrooper | concat: site.data.supercar | concat: site.data.tattooed-women | concat: site.data.vikings | concat: site.data.vines | concat: site.data.witch %}
 
 {% assign academia = everything | where: 'title', 'Academia' %}
 
@@ -49,6 +49,10 @@ title: Miscellaneous
 
 {% include gallery.html data = fxmonster title = "Fx Monster" id = 'fxmonster' %}
 
+{% assign fxmonstermeatsack = everything | where: 'title', 'Fx Monster (Meatsack)' %}
+
+{% include gallery.html data = fxmonstermeatsack title = "Fx Monster (Meatsack)" id = 'fxmonstermeatsack' %}
+
 {% assign gothic = everything | where: 'title', 'Gothic' %}
 
 {% include gallery.html data = gothic title = "Gothic" id = 'gothic' %}
@@ -64,6 +68,18 @@ title: Miscellaneous
 {% assign kawaii = everything | where: 'title', 'Kawaii' %}
 
 {% include gallery.html data = kawaii title = "Kawaii" id = 'kawaii' %}
+
+{% assign legobrickheadz = everything | where: 'title', 'LEGO BrickHeadz' %}
+
+{% include gallery.html data = legobrickheadz title = "LEGO BrickHeadz" id = 'legobrickheadz' %}
+
+{% assign legocreator = everything | where: 'title', 'LEGO Creator' %}
+
+{% include gallery.html data = legocreator title = "LEGO Creator" id = 'legocreator' %}
+
+{% assign legominifig = everything | where: 'title', 'LEGO MiniFig' %}
+
+{% include gallery.html data = legominifig title = "LEGO MiniFig" id = 'legominifig' %}
 
 {% assign logo = everything | where: 'title', 'Logo' %}
 
@@ -100,6 +116,10 @@ title: Miscellaneous
 {% assign nautical = everything | where: 'title', 'Nautical' %}
 
 {% include gallery.html data = nautical title = "Nautical" id = 'nautical' %}
+
+{% assign neonsign = everything | where: 'title', 'Neon Sign' %}
+
+{% include gallery.html data = neonsign title = "Neon Sign" id = 'neonsign' %}
 
 {% assign perfecteyes = everything | where: 'title', 'Perfect Eyes' %}
 

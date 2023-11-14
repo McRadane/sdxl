@@ -83,7 +83,9 @@ const generateImagesData = () => {
       item.slug
     );
     const files = fs.readdirSync(dir);
-    const images = ["title,filename,category,subject,id,prompt,negativePrompt,lora"];
+    const images = [
+      "title,filename,category,subject,id,prompt,negativePrompt,lora",
+    ];
 
     files.forEach((file) => {
       let match = /[0-9]+-(.*)\.jpg/i.exec(file);
@@ -91,7 +93,7 @@ const generateImagesData = () => {
       if (!match) {
         if (file.includes(item.slug)) {
           match = [file, "None"];
-        } 
+        }
       }
 
       if (match) {
