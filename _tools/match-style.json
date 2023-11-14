@@ -573,10 +573,10 @@
         "url": "https://civitai.com/models/123274"
       }
     ],
-    "name": "Moebius",
+    "name": "Moebius (old)",
     "negativePrompt": "",
     "prompt": "{prompt}, <lora:moebius-xl:0.8> moebzxl, moebius, Jean Giraud",
-    "style": "Moebius"
+    "style": "Moebius (old)"
   },
   {
     "category": "Artstyle",
@@ -588,10 +588,10 @@
         "url": "https://civitai.com/models/74776?modelVersionId=154071"
       }
     ],
-    "name": "Moebius (2)",
+    "name": "Moebius",
     "negativePrompt": "",
     "prompt": "<lora:Moebius (Jean Giraud) Style:1> Moebius (Jean Giraud) Style page, {prompt}",
-    "style": "Moebius (2)"
+    "style": "Moebius"
   },
   {
     "category": "Artstyle",

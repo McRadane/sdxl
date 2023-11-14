@@ -150,14 +150,6 @@
   model: 0F1B80CFE8
   nsfw: true
 
-- title: Vines (LoRA)
-  href: /vines-lora
-  description: A women with vines wrapped around her chest. Same as Vines, but with a LoRA (Low-Rank Adaptation) to help drawing the vines.
-  image: static/images/img-thumbs/vines-lora/vines-lora.jpg
-  lora: true
-  model: 0F1B80CFE8
-  nsfw: true
-
 - title: A Witch
   href: /witch
   description: A Witch casting a spell
