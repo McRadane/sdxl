@@ -590,7 +590,7 @@
     ],
     "name": "Crayon",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:crayons_v1_sdxl:1>",
+    "prompt": "{prompt}, <lora:crayons-xl:1>",
     "style": "Crayon"
   },
   {
@@ -605,7 +605,7 @@
     ],
     "name": "Junji Ito",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:XL_itoStyleLycoris:1>",
+    "prompt": "{prompt}, <lora:ito-style-xl:1>",
     "style": "Junji Ito"
   },
   {
@@ -989,7 +989,7 @@
     ],
     "name": "PS1",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:ps1_style_SDXL_v2:1> ps1 style",
+    "prompt": "{prompt}, <lora:ps1-xl:1> ps1 style",
     "style": "PS1"
   },
   {
@@ -1004,7 +1004,7 @@
     ],
     "name": "Voxel",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:VoxelXL_v1:1> voxel style",
+    "prompt": "{prompt}, <lora:voxel-xl:1> voxel style",
     "style": "Voxel"
   },
   {
