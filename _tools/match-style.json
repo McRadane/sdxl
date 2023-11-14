@@ -584,6 +584,21 @@
     "category-slug": "artstyle",
     "lora": [
       {
+        "title": "Moebius (Jean Giraud) Style",
+        "url": "https://civitai.com/models/74776?modelVersionId=154071"
+      }
+    ],
+    "name": "Moebius (2)",
+    "negativePrompt": "",
+    "prompt": "<lora:Moebius (Jean Giraud) Style:1> Moebius (Jean Giraud) Style page, {prompt}",
+    "style": "Moebius (2)"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
         "title": "Crayon Style",
         "url": "https://civitai.com/models/120853?modelVersionId=131462"
       }
@@ -667,6 +682,66 @@
     "negativePrompt": "",
     "prompt": "{prompt}, <lora:d4lixl:1> d4lixl",
     "style": "Dali"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Fractal Art",
+        "url": "https://civitai.com/models/124347?modelVersionId=169002"
+      }
+    ],
+    "name": "Fractal Art",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:fractal-art.v1:1>",
+    "style": "Fractal Art"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "More Art",
+        "url": "https://civitai.com/models/124347?modelVersionId=152309"
+      }
+    ],
+    "name": "More Art",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:xl_more_art-full_v1:1>",
+    "style": "More Art"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Pablo Picasso ∞ SD XL 1.0",
+        "url": "https://civitai.com/models/162136?modelVersionId=182554"
+      }
+    ],
+    "name": "Pablo Picasso",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:p1c4ss0_003-step00028000:1> p1c4ss0",
+    "style": "Pablo Picasso"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "VanGoghBrushwork SD XL 1.0",
+        "url": "https://civitai.com/models/157780"
+      }
+    ],
+    "name": "Van Gogh",
+    "negativePrompt": "",
+    "prompt": "v0ng44g, p14nt1ng, {prompt}, <lora:v0ng44g, p14nt1ng:1>",
+    "style": "Van Gogh"
   },
   {
     "category": "Futuristic",
@@ -1229,6 +1304,36 @@
     "category-slug": "misc",
     "lora": [
       {
+        "title": "Fx-Monsters No Caption",
+        "url": "https://civitai.com/models/86377?modelVersionId=176853"
+      }
+    ],
+    "name": "Fx Monster (No Caption)",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:fx-monsters-xl-nocap:0.5> creepy, monster",
+    "style": "Fx Monster (No Caption)"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "Fx-Monsters Meatsack",
+        "url": "https://civitai.com/models/86377?modelVersionId=198931"
+      }
+    ],
+    "name": "Fx Monster (Meatsack)",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:fx-monsters-xl-meatsack:0.7> fx-monsters-xl-meatsack, creature, monster",
+    "style": "Fx Monster (Meatsack)"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
         "title": "Perfect Eyes XL",
         "url": "https://civitai.com/models/118427"
       }
@@ -1237,6 +1342,66 @@
     "negativePrompt": "",
     "prompt": "{prompt}, <lora:perfect-eyes-xl:1> perfecteyes",
     "style": "Perfect Eyes"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "LeLo - LEGO LoRA for XL & SD1.5",
+        "url": "https://civitai.com/models/92444?modelVersionId=157536"
+      }
+    ],
+    "name": "LEGO MiniFig",
+    "negativePrompt": "",
+    "prompt": "LEGO MiniFig, {prompt}, <lora:lego_v2.0_XL_32:0.8>",
+    "style": "LEGO MiniFig"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "LeLo - LEGO LoRA for XL & SD1.5",
+        "url": "https://civitai.com/models/92444?modelVersionId=157536"
+      }
+    ],
+    "name": "LEGO BrickHeadz",
+    "negativePrompt": "",
+    "prompt": "LEGO BrickHeadz, {prompt}, <lora:lego_v2.0_XL_32:0.8>",
+    "style": "LEGO BrickHeadz"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "LeLo - LEGO LoRA for XL & SD1.5",
+        "url": "https://civitai.com/models/92444?modelVersionId=157536"
+      }
+    ],
+    "name": "LEGO Creator",
+    "negativePrompt": "",
+    "prompt": "LEGO Creator, {prompt}, <lora:lego_v2.0_XL_32:0.8>",
+    "style": "LEGO Creator"
+  },
+  {
+    "category": "Miscellaneous",
+    "category-order": 99,
+    "category-slug": "misc",
+    "lora": [
+      {
+        "title": "Leaves and vines",
+        "url": "https://civitai.com/models/147163?modelVersionId=222317"
+      }
+    ],
+    "name": "Vines",
+    "negativePrompt": "",
+    "prompt": "{prompt}, <lora:vines:0.8>",
+    "style": "Vines"
   },
   {
     "category": "Papercraft",
