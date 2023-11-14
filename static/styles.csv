@@ -100,6 +100,7 @@ Alien,"Alien-themed {prompt} . Extraterrestrial, cosmic, otherworldly, mysteriou
 Double Exposure,"Double Exposure Style, {prompt}, double image ghost effect, image combination, double exposure style","ugly, deformed, noisy, blurry, low contrast"
 Faded Polaroid Photo,"Faded Polaroid Photo, {prompt}, analog, old faded photo, old polaroid","ugly, deformed, noisy, blurry, low contrast, vibrant, colorful"
 Film Noir,"Film noir style {prompt} . Monochrome, high contrast, dramatic shadows, 1940s style, mysterious, cinematic","ugly, deformed, noisy, blurry, low contrast, realism, photorealistic, vibrant, colorful"
+Fisheye,"(Fisheye-shot photograph:1.3) of {prompt}","ugly, deformed, noisy, blurry, low contrast"
 HDR,"HDR photo of {prompt} . High dynamic range, vivid, rich details, clear shadows and highlights, realistic, intense, enhanced contrast, highly detailed","flat, low contrast, oversaturated, underexposed, overexposed, blurred, noisy"
 Knolling Photography,"Knolling Photography, {prompt}, flat lay photography, object arrangment, knolling photography","ugly, deformed, noisy, blurry, low contrast"
 Long Exposure,"Long exposure photo of {prompt} . Blurred motion, streaks of light, surreal, dreamy, ghosting effect, highly detailed","static, noisy, deformed, shaky, abrupt, flat, low contrast"

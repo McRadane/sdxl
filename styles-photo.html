@@ -37,6 +37,14 @@ title: Photo
 
 {% include gallery.html data = filmstilljuggerxl title = "Film Still (Jugger XL)" id = 'filmstilljuggerxl' %}
 
+{% assign fisheye = everything | where: 'title', 'Fisheye' %}
+
+{% include gallery.html data = fisheye title = "Fisheye" id = 'fisheye' %}
+
+{% assign flash = everything | where: 'title', 'Flash' %}
+
+{% include gallery.html data = flash title = "Flash" id = 'flash' %}
+
 {% assign hdr = everything | where: 'title', 'HDR' %}
 
 {% include gallery.html data = hdr title = "HDR" id = 'hdr' %}
@@ -60,6 +68,10 @@ title: Photo
 {% assign neonnoir = everything | where: 'title', 'Neon Noir' %}
 
 {% include gallery.html data = neonnoir title = "Neon Noir" id = 'neonnoir' %}
+
+{% assign photoprism = everything | where: 'title', 'Photo Prism' %}
+
+{% include gallery.html data = photoprism title = "Photo Prism" id = 'photoprism' %}
 
 {% assign silhouette = everything | where: 'title', 'Silhouette' %}
 

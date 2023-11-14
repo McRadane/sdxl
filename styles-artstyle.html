@@ -85,10 +85,6 @@ title: Artstyle
 
 {% include gallery.html data = folkart title = "Folk Art" id = 'folkart' %}
 
-{% assign fractalart = everything | where: 'title', 'Fractal Art' %}
-
-{% include gallery.html data = fractalart title = "Fractal Art" id = 'fractalart' %}
-
 {% assign graffiti = everything | where: 'title', 'Graffiti' %}
 
 {% include gallery.html data = graffiti title = "Graffiti" id = 'graffiti' %}
@@ -121,13 +117,9 @@ title: Artstyle
 
 {% include gallery.html data = moebius title = "Moebius" id = 'moebius' %}
 
-{% assign moebiusold = everything | where: 'title', 'Moebius (old)' %}
+{% assign monochromesurrealism = everything | where: 'title', 'Monochrome Surrealism' %}
 
-{% include gallery.html data = moebiusold title = "Moebius (old)" id = 'moebiusold' %}
-
-{% assign moreart = everything | where: 'title', 'More Art' %}
-
-{% include gallery.html data = moreart title = "More Art" id = 'moreart' %}
+{% include gallery.html data = monochromesurrealism title = "Monochrome Surrealism" id = 'monochromesurrealism' %}
 
 {% assign pablopicasso = everything | where: 'title', 'Pablo Picasso' %}
 
@@ -145,9 +137,17 @@ title: Artstyle
 
 {% include gallery.html data = psychedelic title = "Psychedelic" id = 'psychedelic' %}
 
+{% assign psychedelicnoir = everything | where: 'title', 'Psychedelic Noir' %}
+
+{% include gallery.html data = psychedelicnoir title = "Psychedelic Noir" id = 'psychedelicnoir' %}
+
 {% assign renaissance = everything | where: 'title', 'Renaissance' %}
 
 {% include gallery.html data = renaissance title = "Renaissance" id = 'renaissance' %}
+
+{% assign sovietposter = everything | where: 'title', 'Soviet Poster' %}
+
+{% include gallery.html data = sovietposter title = "Soviet Poster" id = 'sovietposter' %}
 
 {% assign steampunk = everything | where: 'title', 'Steampunk' %}
 

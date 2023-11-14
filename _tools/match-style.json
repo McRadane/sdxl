@@ -569,28 +569,13 @@
     "category-slug": "artstyle",
     "lora": [
       {
-        "title": "Moebius SDXL (Jean Giraud)",
-        "url": "https://civitai.com/models/123274"
-      }
-    ],
-    "name": "Moebius (old)",
-    "negativePrompt": "",
-    "prompt": "{prompt}, <lora:moebius-xl:0.8> moebzxl, moebius, Jean Giraud",
-    "style": "Moebius (old)"
-  },
-  {
-    "category": "Artstyle",
-    "category-order": 3,
-    "category-slug": "artstyle",
-    "lora": [
-      {
         "title": "Moebius (Jean Giraud) Style",
         "url": "https://civitai.com/models/74776?modelVersionId=154071"
       }
     ],
     "name": "Moebius",
     "negativePrompt": "",
-    "prompt": "<lora:Moebius (Jean Giraud) Style:1> Moebius (Jean Giraud) Style page, {prompt}",
+    "prompt": "<lora:moebius-xl:1> Moebius (Jean Giraud) Style page, {prompt}",
     "style": "Moebius"
   },
   {
@@ -635,7 +620,7 @@
     ],
     "name": "John Berkey",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:John Berkey Style:1> John Berkey Style page",
+    "prompt": "{prompt}, <lora:john-berkey:1> John Berkey Style page",
     "style": "John Berkey"
   },
   {
@@ -650,7 +635,7 @@
     ],
     "name": "Folk Art",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:Folk Art:1> Folk Art page",
+    "prompt": "{prompt}, <lora:folk-art:1> Folk Art page",
     "style": "Folk Art"
   },
   {
@@ -665,7 +650,7 @@
     ],
     "name": "Terrible FanArt",
     "negativePrompt": "",
-    "prompt": "<lora:PE_TerribleFanArtV1:0.8> PETerribleFanArt, badly drawn, terrible drawing, ugly,creepy, {prompt}",
+    "prompt": "<lora:terrible-fanart:0.8> PETerribleFanArt, badly drawn, terrible drawing, ugly,creepy, {prompt}",
     "style": "Terrible FanArt"
   },
   {
@@ -680,38 +665,8 @@
     ],
     "name": "Dali",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:d4lixl:1> d4lixl",
+    "prompt": "{prompt}, <lora:dali:1> d4lixl",
     "style": "Dali"
-  },
-  {
-    "category": "Artstyle",
-    "category-order": 3,
-    "category-slug": "artstyle",
-    "lora": [
-      {
-        "title": "Fractal Art",
-        "url": "https://civitai.com/models/124347?modelVersionId=169002"
-      }
-    ],
-    "name": "Fractal Art",
-    "negativePrompt": "",
-    "prompt": "{prompt}, <lora:fractal-art.v1:1>",
-    "style": "Fractal Art"
-  },
-  {
-    "category": "Artstyle",
-    "category-order": 3,
-    "category-slug": "artstyle",
-    "lora": [
-      {
-        "title": "More Art",
-        "url": "https://civitai.com/models/124347?modelVersionId=152309"
-      }
-    ],
-    "name": "More Art",
-    "negativePrompt": "",
-    "prompt": "{prompt}, <lora:xl_more_art-full_v1:1>",
-    "style": "More Art"
   },
   {
     "category": "Artstyle",
@@ -725,7 +680,7 @@
     ],
     "name": "Pablo Picasso",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:p1c4ss0_003-step00028000:1> p1c4ss0",
+    "prompt": "<lora:picasso:1> p1c4ss0, a abstract painting of {prompt}, by pablo picasso, Cubism",
     "style": "Pablo Picasso"
   },
   {
@@ -740,8 +695,53 @@
     ],
     "name": "Van Gogh",
     "negativePrompt": "",
-    "prompt": "v0ng44g, p14nt1ng, {prompt}, <lora:v0ng44g, p14nt1ng:1>",
+    "prompt": "v0ng44g, p14nt1ng, a painting of {prompt}, by van Gogh <lora:vangogh:1>",
     "style": "Van Gogh"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Psychedelic Noir",
+        "url": "https://civitai.com/models/120638?modelVersionId=140194"
+      }
+    ],
+    "name": "Psychedelic Noir",
+    "negativePrompt": "",
+    "prompt": "<lora:Psychedelic_Noir__sdxl:1> {prompt}",
+    "style": "Psychedelic Noir"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Jorg Karg (Monochrome Surrealism) [SDXL]",
+        "url": "https://civitai.com/models/186689?modelVersionId=209618"
+      }
+    ],
+    "name": "Monochrome Surrealism",
+    "negativePrompt": "",
+    "prompt": "<lora:Jorg_Karg_Monochrome_Surrealism_SDXL:1> jorg karg, {prompt}",
+    "style": "Monochrome Surrealism"
+  },
+  {
+    "category": "Artstyle",
+    "category-order": 3,
+    "category-slug": "artstyle",
+    "lora": [
+      {
+        "title": "Soviet poster XL",
+        "url": "https://civitai.com/models/183892?modelVersionId=206390"
+      }
+    ],
+    "name": "Soviet Poster",
+    "negativePrompt": "",
+    "prompt": "<lora:Soviet-poster:1> soviet poster, {prompt}",
+    "style": "Soviet Poster"
   },
   {
     "category": "Futuristic",
@@ -1304,21 +1304,6 @@
     "category-slug": "misc",
     "lora": [
       {
-        "title": "Fx-Monsters No Caption",
-        "url": "https://civitai.com/models/86377?modelVersionId=176853"
-      }
-    ],
-    "name": "Fx Monster (No Caption)",
-    "negativePrompt": "",
-    "prompt": "{prompt}, <lora:fx-monsters-xl-nocap:0.5> creepy, monster",
-    "style": "Fx Monster (No Caption)"
-  },
-  {
-    "category": "Miscellaneous",
-    "category-order": 99,
-    "category-slug": "misc",
-    "lora": [
-      {
         "title": "Fx-Monsters Meatsack",
         "url": "https://civitai.com/models/86377?modelVersionId=198931"
       }
@@ -1355,7 +1340,7 @@
     ],
     "name": "LEGO MiniFig",
     "negativePrompt": "",
-    "prompt": "LEGO MiniFig, {prompt}, <lora:lego_v2.0_XL_32:0.8>",
+    "prompt": "LEGO MiniFig, {prompt}, <lora:lego-xl:0.8>",
     "style": "LEGO MiniFig"
   },
   {
@@ -1370,7 +1355,7 @@
     ],
     "name": "LEGO BrickHeadz",
     "negativePrompt": "",
-    "prompt": "LEGO BrickHeadz, {prompt}, <lora:lego_v2.0_XL_32:0.8>",
+    "prompt": "LEGO BrickHeadz, {prompt}, <lora:lego-xl:0.8>",
     "style": "LEGO BrickHeadz"
   },
   {
@@ -1385,7 +1370,7 @@
     ],
     "name": "LEGO Creator",
     "negativePrompt": "",
-    "prompt": "LEGO Creator, {prompt}, <lora:lego_v2.0_XL_32:0.8>",
+    "prompt": "LEGO Creator, {prompt}, <lora:lego-xl:0.8>",
     "style": "LEGO Creator"
   },
   {
@@ -1394,14 +1379,14 @@
     "category-slug": "misc",
     "lora": [
       {
-        "title": "Leaves and vines",
-        "url": "https://civitai.com/models/147163?modelVersionId=222317"
+        "title": "PE Neon Sign [Style]",
+        "url": "https://civitai.com/models/137160"
       }
     ],
-    "name": "Vines",
+    "name": "Neon Sign",
     "negativePrompt": "",
-    "prompt": "{prompt}, <lora:vines:0.8>",
-    "style": "Vines"
+    "prompt": "<lora:PE_NeonSignStyle:0.9> PENeonSign, neon Sign, glowing, colorful, {prompt}",
+    "style": "Neon Sign"
   },
   {
     "category": "Papercraft",
@@ -1587,6 +1572,15 @@
     "category": "Photo",
     "category-order": 7,
     "category-slug": "photo",
+    "name": "Fisheye",
+    "negativePrompt": "ugly, deformed, noisy, blurry, low contrast",
+    "prompt": "(Fisheye-shot photograph:1.3) of {prompt}",
+    "style": "Fisheye"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
     "lora": [
       {
         "title": "White Background",
@@ -1672,5 +1666,35 @@
     "negativePrompt": "",
     "prompt": "{prompt}, <lora:jugger-xl:1> Cinematic Shot",
     "style": "Jugger XL (Cinematic Shot)"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "lora": [
+      {
+        "title": "F0T0PR1ZM XL",
+        "url": "https://civitai.com/models/170036?modelVersionId=191086"
+      }
+    ],
+    "name": "Photo Prism",
+    "negativePrompt": "",
+    "prompt": "<lora:F8HAUSPRISM:1> lomo artistic starburst filter grainy film photograph portrait of {prompt}, colorful lights, psychedelic, a hologram, holography, monotones, blown out",
+    "style": "Photo Prism"
+  },
+  {
+    "category": "Photo",
+    "category-order": 7,
+    "category-slug": "photo",
+    "lora": [
+      {
+        "title": "Flash Photo SDXL",
+        "url": "https://civitai.com/models/131849?modelVersionId=203379"
+      }
+    ],
+    "name": "Flash",
+    "negativePrompt": "",
+    "prompt": "<lora:sdxl_darkflash_v6:0.8> very dark focused flash photo, {prompt}",
+    "style": "Flash"
   }
 ]
