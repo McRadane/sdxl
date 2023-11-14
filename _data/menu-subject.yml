@@ -56,7 +56,7 @@
 
 - title: Anubis
   href: /egypt
-  description: undefined
+  description: Anubis in front of a temple
   image: static/images/img-thumbs/egypt/egypt.jpg
   lora: false
   model: 0F1B80CFE8
@@ -64,7 +64,7 @@
 
 - title: Fallout Wasteland
   href: /fallout
-  description: undefined
+  description: A woman in a postapocalyptic wasteland.
   image: static/images/img-thumbs/fallout/fallout.jpg
   lora: false
   model: 0F1B80CFE8
@@ -134,9 +134,9 @@
   model: 0F1B80CFE8
   nsfw: true
 
-- title: Viking Warrior
+- title: Viking
   href: /vikings
-  description: undefined
+  description: A Viking warrior
   image: static/images/img-thumbs/vikings/vikings.jpg
   lora: false
   model: 0F1B80CFE8
